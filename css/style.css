@@ -779,6 +779,7 @@ gap: 4.375rem;
 
 .midway {
 font-size: 3.4375rem;
+width: 100%;
 }
 
 
@@ -933,6 +934,65 @@ gap: 1.25rem;
 
 
 
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 1239PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    @media screen and (max-width: 1239px){
+        header {
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap:1.25rem;
+          }
+        
+        .navbar {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+          }
+        }
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 1024PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1024px) {
+
+    header {
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap:1.25rem;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+  }
+.titular-aboutme{
+gap: 200px;
+  }
+  .container-cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 6.375rem;
+    margin-bottom: 3.125rem;
+    }  
+  .titular-enorme-aboutme{
+    font-size: 4.625rem;
+    height:60vh;
+    }
+  .personal-info {
+    gap: 3.75rem;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 768PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 
 
 
@@ -948,7 +1008,11 @@ gap: 1.25rem;
             align-items: center;
             gap: 2rem;
             }
+            .titular-aboutme img{
+                height: 200px;
+                width: auto;
             }
+            
             .header-gradient-aboutme nav{
                 height: 200px;
                 padding:0px;
@@ -963,11 +1027,12 @@ gap: 1.25rem;
             gap: 9.375rem;
             margin-bottom: 3.125rem;
             }   
+        
     .info-text-aboutme{
         height:90vh;
     }
     .titular-enorme-aboutme{
-        font-size: 5.625rem;
+        font-size: 3.625rem;
         height:50vh;
         }
         .personal-info {
@@ -1015,133 +1080,6 @@ gap: 1.25rem;
                 }
 
 
-footer{
-background-color: rgb(214, 214, 214);
-height:400px;
-gap: 3.125rem ;
-}
-
-.newsletter{
-width: 18.75rem;
-gap:1.25rem;
-}
-.info-final div{
-gap: 1.25rem;
-margin-bottom: .625rem ;
-}
-
-
-@media screen and (max-width: 1024px) {
-
-    header {
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      gap:1.25rem;
-    }
-  
-    .navbar {
-      flex-direction: column;
-      align-items: center;
-      gap: 1rem;
-    }
-  }
-.titular-aboutme{
-gap: 200px;
-  }
-  .container-cards{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 6.375rem;
-    margin-bottom: 3.125rem;
-    }  
-  .titular-enorme-aboutme{
-    font-size: 4.625rem;
-    height:60vh;
-    }
-  .personal-info {
-    gap: 3.75rem;
-    }
-
-    @media screen and (max-width > 1239px){
-        header {
-            justify-content: center;
-            flex-direction: column;
-            align-items: center;
-            gap:1.25rem;
-          }
-        
-        .navbar {
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-          }
-        }
-
-        @media screen and (max-width: 425px) {
-            header {
-            flex-direction: column;
-            align-items: center;
-            }
-
-            header div img {
-            width: 8rem;
-            }
-
-            .navbar {
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-            }
-            .titular-aboutme div h1{
-                font-size: 2.125rem;;
-            }
-            .titular-enorme-aboutme{
-                font-size: 2.625rem;
-                height:60vh;
-                }
-            .personal-info {
-                    gap: .75rem;
-                    }
-            .pharagraph-aboutme{
-                        height: 6.25rem;
-                        width: 350px;
-                        text-align: center;
-                        }
-            .proyect1-aboutme div p{
-                            width: 350px;
-                            font-weight: 500;
-                            }
-            .proyect2-aboutme div p{
-                            width: 350px;
-                            text-align: center;
-}
-.titular-aboutme{
-padding-top: 5.375rem;}
-.proyect1-aboutme{
-    gap:2.125rem;
-    }   
-.proyect2-aboutme{
-        gap:2.125rem;
-        } 
-    .proyect1-aboutme img{
-        height: 27.5rem;
-        }
-        .proyect2-aboutme img{
-        height: 27.5rem;
-        }
-        }
-
-
-        
-        @media screen and (max-width: 550px) {
-            .titular-enorme-aboutme{
-                font-size: 2.625rem;
-                height:60vh;
-                }
                 footer{
                     background-color: rgb(214, 214, 214);
                     height:400px;
@@ -1159,7 +1097,7 @@ padding-top: 5.375rem;}
                     gap:1.25rem;
                     }
                     .newsletter p{
-    font-size: 10px;
+                    font-size: 10px;
                         }
                     .info-final div{
                     gap: 1.25rem;
@@ -1173,6 +1111,135 @@ padding-top: 5.375rem;}
     font-size: 8px;
         }
     }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 550PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+        
+        @media screen and (max-width: 550px) {
+
+            .titular-aboutme img{
+                height: 200px;
+                width: auto;
+            }
+            .titular-enorme-aboutme{
+                font-size: 2.625rem;
+                height:60vh;
+                }
+                .pharagraph-aboutme{
+                    height: 6.25rem;
+                    width: 350px;
+                    text-align: center;
+                    }
+                .proyect1-aboutme div {
+                    width: 100%;
+                    }
+                    .proyect2-aboutme div {
+                        width: 100%;
+                        }
+                    .proyect1-aboutme div button{
+                        width: 50%;
+                        }
+                        .proyect2-aboutme div button{
+                            width: 50%;
+                            }
+                            .proyect1-aboutme div p{
+                                width: 350px;
+                                font-weight: 500;
+                                }
+                .proyect2-aboutme div p{
+                                width: 350px;
+                                text-align: center;
+                footer{
+                    background-color: rgb(214, 214, 214);
+                    height:400px;
+                    gap: 3.125rem ;
+                    }
+                    .primer-footer{
+                        gap:20px;
+                        flex-direction:column ;
+                    }
+                    .social-media li a img{
+                        height: 17px;
+                    }
+                    .newsletter{
+                    width: 18.75rem;
+                    gap:1.25rem;
+                    }
+                    .newsletter p{
+                    font-size: 10px;
+                        }
+                    .info-final div{
+                    gap: 1.25rem;
+                    margin-bottom: .625rem ;
+                    }
+                    .info-final div img{
+                    height: 30px;
+                    width: auto;
+                        }
+                        .info-final div h4{
+    font-size: 8px;
+        }
+    }
+        /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 455PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    @media screen and (max-width: 455px) {
+        header {
+        flex-direction: column;
+        align-items: center;
+        }
+
+        header div img {
+        width: 8rem;
+        }
+
+        .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        }
+        .titular-aboutme div h1{
+            font-size: 2.125rem;;
+        }
+        .titular-enorme-aboutme{
+            font-size: 2.625rem;
+            height:60vh;
+            }
+        .personal-info {
+                gap: .75rem;
+                }
+        .pharagraph-aboutme{
+                    height: 6.25rem;
+                    width: 350px;
+                    text-align: center;
+                    }
+        .proyect1-aboutme div p{
+                        width: 350px;
+                        font-weight: 500;
+                        }
+        .proyect2-aboutme div p{
+                        width: 350px;
+                        text-align: center;
+}
+.titular-aboutme{
+padding-top: 5.375rem;}
+.proyect1-aboutme{
+gap:2.125rem;
+}   
+.proyect2-aboutme{
+    gap:2.125rem;
+    } 
+.proyect1-aboutme img{
+    height: 27.5rem;
+    }
+    .proyect2-aboutme img{
+    height: 27.5rem;
+    }
+    }
+
+        /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 390PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @media screen and (max-width: 390px){
         body{
             background-color: rgb(0, 0, 0);
@@ -1215,6 +1282,9 @@ font-size: 8px;
     height:50vh;
     }
     }
+        /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------MEDIA 320PX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     @media screen and (max-width: 320px){
 
 .titular-aboutme img{
@@ -1225,6 +1295,11 @@ width: auto;
             font-size: 1.625rem;
             height:40vh;
             }
+            .pharagraph-aboutme{
+                height: 6.25rem;
+                width: 100%;
+                text-align: center;
+                }
         .proyect1-aboutme img{
             height: 17.5rem;
             }
@@ -1232,12 +1307,12 @@ width: auto;
             height: 17.5rem;
             }
             .proyect1-aboutme div p{
-                width: 200px;
+                width: 100%;
                 font-weight: 500;
                 font-size: 12px;
                 }
 .proyect2-aboutme div p{
-                width: 200px;
+                width: 100%;
                 text-align: center;
                 font-size: 12px;
 }
