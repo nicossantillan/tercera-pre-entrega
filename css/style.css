@@ -1061,6 +1061,10 @@ padding-top: 4.375rem;
     flex-direction: column;
     gap: 2.125rem;
     justify-content: center;
+
+}
+.footer-contact{
+    height: 600px;
 }
 }
 
