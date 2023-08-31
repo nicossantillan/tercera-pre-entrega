@@ -399,76 +399,6 @@ margin-top: 0;
 padding-top: 1.875rem ;
 }
 
-.contact-body-background{
-background-color: rgb(0, 0, 0);
-background-image: url(../assets/img/contact_background.jpg);
-width:100%;
-height: 100vh;
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.config-main-contact{
-height: 100vh;
-width: 100%;
-}
-
-.config-section-contact{
-display: flex;
-flex-direction: column;
-flex-wrap: wrap;
-height: 34.375rem;
-width: 31.25rem;
-background: linear-gradient(180deg, rgba(0,0,0,0.7693452380952381) 9%, rgba(0,0,0,0.16430322128851538) 74%, rgba(0,0,0,0.027048319327731107) 100%);
-font-family:'Work Sans', sans-serif;
-font-size: 1.25rem;
-color: white;
-text-align: left;
-margin-left: 20.625rem;
-margin-top: 2.1875rem;
-padding-left: 2.1875rem;
-padding-top: 1.25rem;
-gap: 1.25rem;
-border-radius: 1.25rem;
-}
-
-.config-section-contact h2 {
-font-weight: 400;
-}
-
-.config-main-contact h1{
-font-family: 'Work Sans', sans-serif;
-font-weight:normal;
-display: flex;
-justify-content: center;
-color: white;
-font-size: 3.75rem;
-margin-top: 2.5rem;
-}
-
-.next-button{
-position:absolute;
-left:1700px;
-bottom: 70px;
-}
-
-.write-here-contact{
-height: 16.25rem;
-width:23.75rem;
-border: .0625rem solid white;
-border-radius: 1.25rem;
-background-color: rgba(0, 0, 0, 0.39);
-color:grey;
-font-family: 'Work Sans', sans-serif;
-font-size: 1.25rem;
-}
-
-.write-here-contact p{
-margin-left: 1.25rem;
-margin-top: .875rem;
-}
-/* FIN MAIN DE CONTACT*/
-
 
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
@@ -1213,6 +1143,9 @@ padding-top: 4.375rem;
 .primer-footer-catalogue{
     gap:40px;
     flex-direction:column ; }
+    .footer-contact{
+        height: 600px;
+    }
 }
 
         /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1282,6 +1215,9 @@ gap:2.125rem;
 }
 footer{
     height: 500px;
+}
+.footer-contact{
+    height: 600px;
 }
     }
 
