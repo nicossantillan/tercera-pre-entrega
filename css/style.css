@@ -936,7 +936,7 @@ gap: 1.25rem;
 
 
 
-    @media screen and (max-width > 768px) {
+    @media screen and (max-width: 768px) {
 
         header {
             flex-direction: column;
@@ -1031,7 +1031,7 @@ margin-bottom: .625rem ;
 }
 
 
-@media screen and (max-width > 1024px) {
+@media screen and (max-width: 1024px) {
 
     header {
       justify-content: center;
@@ -1081,7 +1081,7 @@ gap: 200px;
           }
         }
 
-        @media screen and (max-width > 425px) {
+        @media screen and (max-width: 425px) {
             header {
             flex-direction: column;
             align-items: center;
@@ -1135,123 +1135,9 @@ padding-top: 5.375rem;}
         }
         }
 
-        @media screen and (max-width >= 390px){
-            .titular-aboutme img{
-                height: 200px;
-                width: auto;
-            }
-            footer{
-                background-color: rgb(214, 214, 214);
-                height:400px;
-                gap: 3.125rem ;
-                }
-                .primer-footer{
-                    gap:20px;
-                }
-                .social-media li a img{
-                    height: 17px;
-                }
-                .newsletter{
-                width: 18.75rem;
-                gap:1.25rem;
-                }
-                .newsletter p{
-font-size: 10px;
-                    }
-                .info-final div{
-                gap: 1.25rem;
-                margin-bottom: .625rem ;
-                }
-                .info-final div img{
-                height: 30px;
-                width: auto;
-                    }
-                    .info-final div h4{
-font-size: 8px;
-}
-        }
-        @media screen and (max-width > 320px){
 
-.titular-aboutme img{
-    height: 200px;
-    width: auto;
-}
-            .titular-enorme-aboutme{
-                font-size: 1.625rem;
-                height:40vh;
-                }
-            .proyect1-aboutme img{
-                height: 17.5rem;
-                }
-                .proyect2-aboutme img{
-                height: 17.5rem;
-                }
-                .proyect1-aboutme div p{
-                    width: 200px;
-                    font-weight: 500;
-                    font-size: 12px;
-                    }
-    .proyect2-aboutme div p{
-                    width: 200px;
-                    text-align: center;
-                    font-size: 12px;
-}
-.info-text-aboutme{
-    height:50vh;
-    width: 100%;
-    justify-content:center ;
-}
-.info-text-aboutme h3{
-font-size: 20px;
-}
-.info-text-aboutme div h2{
-font-size: 20px;
-}
-.info-text-aboutme div p{
-    font-size: 14px;
-
-    }
-    .info-text-aboutme div{
-        width:90%;
-        }
-        .personal-info div h4{
-            font-size: 12px;
-            }
         
-        .personal-info div p{
-            font-size: 12px;
-            }
-            footer{
-                background-color: rgb(214, 214, 214);
-                height:400px;
-                gap: 3.125rem ;
-                }
-                .primer-footer{
-                    gap:20px;
-                }
-                .social-media li a img{
-                    height: 17px;
-                }
-                .newsletter{
-                width: 18.75rem;
-                gap:1.25rem;
-                }
-                .newsletter p{
-font-size: 10px;
-                    }
-                .info-final div{
-                gap: 1.25rem;
-                margin-bottom: .625rem ;
-                }
-                .info-final div img{
-                height: 30px;
-                width: auto;
-                    }
-                    .info-final div h4{
-font-size: 8px;
-}
-        }
-        @media screen and (max-width > 550px) {
+        @media screen and (max-width: 550px) {
             .titular-enorme-aboutme{
                 font-size: 3.625rem;
                 height:60vh;
@@ -1286,4 +1172,127 @@ font-size: 8px;
                         .info-final div h4{
     font-size: 8px;
         }
+    }
+    @media screen and (max-width: 390px){
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+        .titular-aboutme img{
+            height: 200px;
+            width: auto;
+        }
+        footer{
+            background-color: rgb(214, 214, 214);
+            height:400px;
+            gap: 3.125rem ;
+            }
+            .primer-footer{
+                gap:20px;
+            }
+            .social-media li a img{
+                height: 17px;
+            }
+            .newsletter{
+            width: 18.75rem;
+            gap:1.25rem;
+            }
+            .newsletter p{
+font-size: 10px;
+                }
+            .info-final div{
+            gap: 1.25rem;
+            margin-bottom: .625rem ;
+            }
+            .info-final div img{
+            height: 30px;
+            width: auto;
+                }
+                .info-final div h4{
+font-size: 8px;
+}
+.titular-enorme-aboutme{
+    font-size: 2.625rem;
+    height:50vh;
+    }
+    }
+    @media screen and (max-width: 320px){
+
+.titular-aboutme img{
+height: 200px;
+width: auto;
+}
+        .titular-enorme-aboutme{
+            font-size: 1.625rem;
+            height:40vh;
+            }
+        .proyect1-aboutme img{
+            height: 17.5rem;
+            }
+            .proyect2-aboutme img{
+            height: 17.5rem;
+            }
+            .proyect1-aboutme div p{
+                width: 200px;
+                font-weight: 500;
+                font-size: 12px;
+                }
+.proyect2-aboutme div p{
+                width: 200px;
+                text-align: center;
+                font-size: 12px;
+}
+.info-text-aboutme{
+height:50vh;
+width: 100%;
+justify-content:center ;
+}
+.info-text-aboutme h3{
+font-size: 20px;
+}
+.info-text-aboutme div h2{
+font-size: 20px;
+}
+.info-text-aboutme div p{
+font-size: 14px;
+
+}
+.info-text-aboutme div{
+    width:90%;
+    }
+    .personal-info div h4{
+        font-size: 12px;
+        }
+    
+    .personal-info div p{
+        font-size: 12px;
+        }
+        footer{
+            background-color: rgb(214, 214, 214);
+            height:400px;
+            gap: 3.125rem ;
+            }
+            .primer-footer{
+                gap:20px;
+            }
+            .social-media li a img{
+                height: 17px;
+            }
+            .newsletter{
+            width: 18.75rem;
+            gap:1.25rem;
+            }
+            .newsletter p{
+font-size: 10px;
+                }
+            .info-final div{
+            gap: 1.25rem;
+            margin-bottom: .625rem ;
+            }
+            .info-final div img{
+            height: 30px;
+            width: auto;
+                }
+                .info-final div h4{
+font-size: 8px;
+}
     }
