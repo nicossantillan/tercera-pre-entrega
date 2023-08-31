@@ -339,7 +339,7 @@ margin-bottom: 3.75rem ;
     
     .footer-catalogue{
     background-color: white;
-    padding-bottom: 6.25rem;
+    padding-bottom: 4.25rem;
     display: flex;
     flex-direction: column;
     gap: 3.125rem;
@@ -388,87 +388,6 @@ margin-bottom: 3.75rem ;
     .button-4:focus {
         outline: 1px transparent;
     }
-    
-        /*-------------------------*/
-        /*-------BUTTONS: FIND OUT-------*/
-        /*-------------------------*/
-    .container1{
-            height:15%;
-            position: absolute;
-            top: 77%;
-            left: 17%;
-            transform: translate(-50%, -50%);
-    }
-    
-    .container2{
-        height:15%;
-        position: absolute;
-        top: 77%;
-        left: 51%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .container3{
-        height:15%;
-        position: absolute;
-        top: 77%;
-        left: 84%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .btn {
-        margin-top: calc(50% + 25px);
-        position: relative;
-        display: inline-block;
-        width: 277px;
-        height: 50px;
-        font-size: 1em;
-        font-weight: bold;
-        line-height: 60px;
-        text-align: center;
-        text-transform: uppercase;
-        background-color: transparent;
-        cursor: pointer;
-        text-decoration:none;
-        font-family: 'Roboto', sans-serif;
-        font-weight:900;
-        font-size:17px;
-        letter-spacing: 0.045em;
-    }
-    
-    .btn svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-    
-    .btn svg rect {
-        stroke: #ffffff;
-        stroke-width: 4;
-        stroke-dasharray: 353, 0;
-        stroke-dashoffset: 0;
-        -webkit-transition: all 600ms ease;
-        transition: all 600ms ease;
-    }
-    
-    .btn span{
-        background: rgb(255, 255, 255);
-        background: -moz-linear-gradient(left,  rgb(255, 255, 255) 0%, rgb(255, 255, 255) 100%);
-        background: -webkit-linear-gradient(left,  rgb(255, 255, 255) 0%,rgb(255, 255, 255) 100%);
-        background: linear-gradient(to right,  rgb(255, 254, 254) 0%,rgb(255, 255, 255) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8282', endColorstr='#e178ed',GradientType=1 );
-        
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }
-    
-    .btn:hover svg rect {
-        stroke-width: 4;
-        stroke-dasharray: 196, 543;
-        stroke-dashoffset: 437;
-    }
-/* FINAL MAIN DEL CATALOGUE*/
-
 
 
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1166,7 +1085,7 @@ gap: 200px;
 
                 footer{
                     background-color: rgb(214, 214, 214);
-                    height:400px;
+                    height:500px;
                     gap: 3.125rem ;
                     }
                     .primer-footer{
@@ -1259,7 +1178,7 @@ padding-top: 4.375rem;
                                 text-align: center;}
                 footer{
                     background-color: rgb(214, 214, 214);
-                    height:400px;
+                    height:500px;
                     gap: 3.125rem ;
                     }
                     .primer-footer{
@@ -1287,13 +1206,13 @@ padding-top: 4.375rem;
                         .info-final div h4{
     font-size: 8px;
         }
-    }
+    
         /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 .primer-footer-catalogue{
     gap:40px;
-    flex-direction:column ;
+    flex-direction:column ; }
 }
 
         /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1361,6 +1280,9 @@ gap:2.125rem;
     gap:40px;
     flex-direction:column ;
 }
+footer{
+    height: 500px;
+}
     }
 
         /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1377,7 +1299,7 @@ gap:2.125rem;
         }
         footer{
             background-color: rgb(214, 214, 214);
-            height:400px;
+            height:500px;
             gap: 3.125rem ;
             }
             .primer-footer{
@@ -1480,6 +1402,7 @@ font-size: 14px;
             background-color: rgb(214, 214, 214);
             height:400px;
             gap: 3.125rem ;
+            height: 500px;
             }
             .primer-footer{
                 gap:20px;
@@ -1508,7 +1431,9 @@ font-size: 8px;
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.primer-footer-catalogue{
-    gap:40px;
-    flex-direction:column ;}
+    
+.cards-catalogue{
+    font-size: 10px;
+    width: 100%;
 }
+        }
