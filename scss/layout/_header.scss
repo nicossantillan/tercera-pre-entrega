@@ -1,0 +1,42 @@
+header{
+    @include flex (row, wrap, space-around, center, .0625rem);
+    margin-top: 1.875rem;
+    div{
+        a{
+            img{
+                width: 10.3125rem;
+            }
+        }
+    }
+    nav{
+        ul{
+            list-style: none;
+            font-family: 'Work Sans', sans-serif;
+            font-weight: 600;
+            @include flex (row, wrap, space-around, center, 13.75rem);
+            li{
+                a{
+                    text-decoration: none;
+                    font-size: 1rem;
+                    color: rgb(255, 255, 255);
+                    &:hover{
+                        color: rgb(0, 0, 0);
+                        border-radius: 20px;
+                        padding: 8px 12px 8px 12px;
+                        background-color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-gradient-aboutme{ 
+    background: linear-gradient(180deg, rgba(112,17,14,1) 0%, rgba(55,9,7,1) 46%, rgba(0,0,0,1) 100%);
+    margin-top: 0;
+    padding-top: 1.875rem ;
+}
+.header-gradient-catalogue{
+    background: linear-gradient(180deg, rgba(112,17,14,1) 0%, rgba(55,9,7,1) 46%, rgba(0,0,0,1) 100%);
+    margin-top: 0;
+    padding-top: 1.875rem ;
+}

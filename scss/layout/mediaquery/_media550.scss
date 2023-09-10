@@ -1,0 +1,130 @@
+@media screen and (max-width: 550px) {
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .titular-aboutme img{
+        height: 200px;
+        width: auto;
+    }
+    .titular-enorme-aboutme{
+        font-size: 2.625rem;
+        height:60vh;
+    }
+    .pharagraph-aboutme{
+        height: 6.25rem;
+        width: 350px;
+        text-align: center;
+    }
+    .proyect1-aboutme div {
+        width: 100%;
+    }
+    .proyect2-aboutme div {
+        width: 100%;
+    }
+    .proyect1-aboutme div button{
+        width: 50%;
+    }
+    .proyect2-aboutme div button{
+        width: 50%;
+    }
+    .proyect1-aboutme div p{
+        width: 350px;
+        font-weight: 500;
+    }
+    .proyect2-aboutme div p{
+        width: 350px;
+        text-align: center;}
+    footer{
+        background-color: rgb(214, 214, 214);
+        height:550px;
+        gap: 3.125rem ;
+    }
+    .primer-footer{
+        gap:20px;
+        flex-direction:column ;
+    }
+    .social-media li a img{
+        height: 17px;
+    }
+    .newsletter{
+        width: 18.75rem;
+        gap:1.25rem;
+    }
+    .newsletter p{
+        font-size: 10px;
+    }
+    .info-final div{
+        gap: 1.25rem;
+        margin-bottom: .625rem ;
+    }
+    .info-final div img{
+        height: 30px;
+        width: auto;
+    }
+    .info-final div h4{
+        font-size: 8px;
+    }
+    
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .primer-footer-catalogue{
+        gap:40px;
+        flex-direction:column ;
+    }
+    .footer-contact{
+        height: 600px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
+    .index-body-background{
+        background-color: rgb(0, 0, 0);
+        background-image: url(../assets/img/media-4.jpg);
+        width:auto;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .welcome {
+        width: 21.875rem;
+        font-family: 'Anonymous Pro', monospace;
+        color:white; 
+        font-size: 16px;
+        text-align: center;
+        display:flex; 
+        justify-content: center;
+    }
+    .section-landing div{
+        width:12.5rem;
+        font-family: 'Anonymous Pro', monospace;
+        color:white; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: end;
+        gap:1rem;
+    }
+    .section-landing img{
+        height: 14.375rem;
+        width: auto;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .display-images-last{
+        margin-bottom: 1.5rem;
+    }
+    .fonts-books{
+        font-size: 2.625rem;
+    }
+    .display-images img{
+    height: 150px;
+    width: auto;
+    }
+    .display-images-last img{
+        height: 150px;
+        width: auto;
+        }
+    }

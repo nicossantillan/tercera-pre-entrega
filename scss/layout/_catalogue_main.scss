@@ -1,0 +1,45 @@
+.main-catalogue{
+    @include grid (repeat(3,33%), repeat(1,100vh), "item1 item2 item3");
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+.item1{
+    grid-area: item1;
+}
+.item2{
+    grid-area: item2;
+}
+.item3{
+    grid-area: item3;
+}
+.cards-catalogue {
+    height: 43.75rem;
+    width: 20.625rem;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+    @include flex (column, wrap, center, center, 1.875rem);
+    .portrait-image {
+        height: 21.875rem;
+        width: 21.875rem;
+        background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+    .texture-image {
+        height: 21.875rem;
+        width: 21.875rem;
+        background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+    .nature-image {
+        height: 21.875rem;
+        width: 21.875rem;
+        background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+        background-position: center;
+    }
+}

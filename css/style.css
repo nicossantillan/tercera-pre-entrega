@@ -1,843 +1,813 @@
-*{
-padding: 0;
-margin:0;
-box-sizing: border-box;
+/*primero llamamos a las variables y mixins*/
+/*despues lllamamos al reset*/
+@import url("https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Inter&family=Work+Sans:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/* FONT: WORK SANS*/
-/* FONT: ANONYMOUS PRO BOLD*/
-/* FONT: INTER REGULAR*/
-
-@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Inter&family=Work+Sans:wght@400;500;600;700;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400600&display=swap');
-
-
-body{
-background-color: rgb(0, 0, 0);
+body {
+  background-color: rgb(0, 0, 0);
 }
 
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    /*-------------------------------------------------------HEADER----------------------------------------------------------------------------*/
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-header{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin-top: 1.875rem;
+/*layout*/
+header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.0625rem;
+  margin-top: 1.875rem;
+}
+header div a img {
+  width: 10.3125rem;
+}
+header nav ul {
+  list-style: none;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 13.75rem;
+}
+header nav ul li a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+}
+header nav ul li a:hover {
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 8px 12px 8px 12px;
+  background-color: white;
 }
 
-header div img{
-    width: 10.3125rem;
+.header-gradient-aboutme {
+  background: linear-gradient(180deg, rgb(112, 17, 14) 0%, rgb(55, 9, 7) 46%, rgb(0, 0, 0) 100%);
+  margin-top: 0;
+  padding-top: 1.875rem;
 }
 
-.navbar{
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    list-style: none;
-    gap: 1.25rem;
-    font-family: 'Work Sans', sans-serif;
-    font-weight: 600;
-    justify-content: space-around;
-    gap: 13.75rem;
+.header-gradient-catalogue {
+  background: linear-gradient(180deg, rgb(112, 17, 14) 0%, rgb(55, 9, 7) 46%, rgb(0, 0, 0) 100%);
+  margin-top: 0;
+  padding-top: 1.875rem;
 }
 
-.navbar li a{
-    text-decoration: none;
-    font-size: 1rem;
-    color: rgb(255, 255, 255);
+.index-body-background {
+  background-color: rgb(0, 0, 0);
+  background-image: url(../assets/img/main.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
 }
 
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.index-body-background{
-    background-color: rgb(0, 0, 0);
-    background-image: url(../assets/img/main.png);
-    width:100%;
-    height: 100vh;
-    background-repeat: no-repeat;
+.first-class {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
+  align-items: end;
+  gap: 6.875rem;
+  margin-right: 3.125rem;
+  margin-top: 7.5rem;
+}
+.first-class div {
+  width: 21.875rem;
+  font-family: "Anonymous Pro", monospace;
+  color: white;
+  font-size: 1.5rem;
+  text-align: end;
+  display: flex;
+  justify-content: flex-end;
+}
+.first-class section {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1.875rem;
+}
+.first-class section div {
+  width: 12.5rem;
+  font-family: "Anonymous Pro", monospace;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: end;
+}
+.first-class section div p {
+  font-size: 1.3rem;
+}
+.first-class section img {
+  height: 20.625rem;
+  width: auto;
 }
 
-.first-class{
-    display: flex;
-    flex-direction: column;
-    justify-content:left;
-    gap: 6.875rem;
-    align-items: end;
-    margin-right: 3.125rem;
-    margin-top: 7.5rem;
+.section-gallery {
+  margin-top: 40.625rem;
+  margin-bottom: 12.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 4.375rem;
 }
 
-.welcome {
-    width: 21.875rem;
-    font-family: 'Anonymous Pro', monospace;
-    color:white; 
-    font-size: 1.5rem;
-    text-align: end;
-    display:flex; 
-    justify-content: flex-end;
+.gallery-images1 {
+  display: flex;
+  flex-direction: column;
+  gap: 4.375rem;
 }
 
-.section-landing{
-    display: flex;
-    flex-direction: row-reverse;
-    gap: 1.875rem;
+.tecer-pagina-figma {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.3125rem;
+}
+.tecer-pagina-figma section {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  gap: 2.5rem;
+}
+.tecer-pagina-figma section div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 22.5rem;
+  height: 34.375rem;
+  font-family: "Work Sans", sans-serif;
+}
+.tecer-pagina-figma section div h3 {
+  margin-top: 15px;
+  font-size: 0.8125rem;
+}
+.tecer-pagina-figma section div h2 {
+  font-size: 1.9375rem;
+}
+.tecer-pagina-figma section div p {
+  font-size: 0.875rem;
+  text-align: justify;
+  margin-top: 1.125rem;
+}
+.tecer-pagina-figma section .div-jordan {
+  height: 36.25rem;
+  width: 28.75rem;
+  background-image: url(https://images.unsplash.com/photo-1520930528075-4ea5ead759f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.tecer-pagina-figma div ul {
+  list-style: none;
+}
+.tecer-pagina-figma div ul li img {
+  height: 7.5rem;
+  width: 10.625rem;
+  border: 0.0625rem solid rgba(0, 0, 0, 0.432);
 }
 
-.section-landing div{
-    width:12.5rem;
-    font-family: 'Anonymous Pro', monospace;
-    color:white; 
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    text-align: end;
+.about-collection {
+  height: 27.5rem;
+  text-align: center;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
 }
-.section-landing img{
-    height: 20.625rem;
-    width: auto;
+.about-collection p {
+  font-size: 0.8125rem;
+  width: 70%;
 }
-
-
-
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    /*-------------------------------------------------------INDEX: GALERIA DE TRES FOTOS--------------------------------------------------------------------*/
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.section-gallery{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 40.625rem;
-    margin-bottom: 12.5rem;
-    gap: 4.375rem;
+.about-collection h2 {
+  margin-bottom: 3.75rem;
 }
 
-.gallery-images1{
-    display: flex;
-    flex-direction: column;
-    gap: 4.375rem;
+footer {
+  background-color: rgb(255, 255, 255);
+  height: 34.375rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 12.5rem;
 }
-/*  FINAL SEGUNDA PAGINA DEL FIGMA */
-
-/*  INICIO TERCER PAGINA DEL FIGMA */
-.tecer-pagina-figma{
-    background-color: white;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
+footer .primer-footer {
+  padding-top: 4.375rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.3125rem;
 }
-
-.tecer-pagina-figma section{
-    display:flex;
-    flex-direction: row;
-    height: 100vh;
-    align-items: center;
-    gap: 2.5rem;
+footer .primer-footer .newsletter {
+  width: 28.125rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  font-family: "Work Sans", sans-serif;
 }
-.div-jordan{
-    height: 36.25rem;
-    width: 28.75rem;
-    background-image: url(https://images.unsplash.com/photo-1520930528075-4ea5ead759f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
-    background-position:center;
-    background-size: cover;
-    background-repeat: no-repeat;
+footer .primer-footer .newsletter p {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
 }
-
-.div-tercer-pag{
-    display: flex;
-    flex-direction: column;
-    width: 22.5rem;
-    height: 34.375rem;
-    font-family: 'Work Sans', sans-serif;
+footer .primer-footer div nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
 }
-
-.div-tercer-pag h3{
-    margin-top:15px;
-    font-size: .8125rem;
+footer .info-final {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.3125rem;
 }
-
-.div-tercer-pag h2{
-    font-size: 1.9375rem;
-}
-
-.div-tercer-pag p{
-    font-size: .875rem;
-    text-align: justify;
-    margin-top: 3.125rem;
-}
-
-.images-column{
-    list-style: none;
+footer .info-final div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 3.75rem;
 }
 
-.images-column li img{
-    height: 7.5rem;
-    width: 10.625rem;
-    border: .0625rem solid rgba(0, 0, 0, 0.432)
+.footer-catalogue {
+  background-color: white;
+  padding-bottom: 4.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
 }
 
-/*  FINAL TERCER PAGINA DEL FIGMA */
-
-/*  INICIO CUARTA PAGINA DEL FIGMA */
-.about-collection{
-    height: 27.5rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:white;
-    font-family: 'Work Sans', sans-serif;
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: auto 34.375rem;
+  grid-template-areas: "item1" "item2";
 }
 
-.about-collection p{
-    font-size: .8125rem;
-    width: 70%;
+.item1 {
+  grid-area: item1;
 }
 
-.about-collection h2{
-    margin-bottom: 3.75rem;
+.item2 {
+  grid-area: item2;
 }
 
-footer{
-    background-color: rgb(255, 255, 255);
-    height:34.375rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 12.5rem;
+.cards-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 100%);
+  grid-template-rows: repeat(3, 3fr);
+  grid-template-areas: "carditem1" "carditem2" "carditem3";
 }
 
-.primer-footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4.375rem;
+.carditem1 {
+  grid-area: carditem1;
 }
 
-.newsletter{
-    width: 28.125rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Work Sans', sans-serif;
+.carditem2 {
+  grid-area: carditem2;
 }
 
-.newsletter p{
-    font-family: 'Inter', sans-serif;
-    font-size: .75rem;
+.carditem3 {
+  grid-area: carditem3;
 }
 
-.social-media{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3.125rem;
+.sections-books {
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
 }
 
-.info-final{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+.fonts-books {
+  font-family: "Work Sans", sans-serif;
+  font-size: 5.625rem;
+  color: rgb(255, 255, 255);
 }
 
-.info-final div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 1.25rem;
-    margin-bottom: 3.75rem ;
+.line {
+  width: 85.3127rem;
+  height: 0.1875rem;
+  background: #530d0a;
+  margin-bottom: 5.3125rem;
 }
 
-/*-------------------------*/
-/*-------PAGES: CATALOGUE-------*/
-/*-------------------------*/
-
-.header-gradient-catalogue{
-    background: linear-gradient(180deg, rgba(112,17,14,1) 0%, rgba(55,9,7,1) 46%, rgba(0,0,0,1) 100%);
-    margin-top: 0;
-    padding-top: 1.875rem ;
+.display-images {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3.125rem;
+  justify-content: center;
+  margin-top: 2.1875rem;
 }
 
-/* INICIO MAIN DEL CATALOGUE*/
-.main-catalogue{
-    display: grid;
-    height: 100vh;
-    grid-template-columns: repeat(3,33%);
-    grid-template-rows: repeat(1,100vh);
-    grid-template-areas:
-        "item1 item2 item3";
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
+.display-images-last {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 3.125rem;
+  justify-content: center;
+  margin-top: 2.1875rem;
+  margin-bottom: 7.5rem;
 }
 
-item1{
-        grid-area: item1;
+.line-bottom {
+  width: 85.3127rem;
+  height: 0.1875rem;
+  background: #530d0a;
+  margin-top: 5.3125rem;
 }
-item2{
-        grid-area: item2;
+
+.main-catalogue {
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: repeat(1, 100vh);
+  grid-template-areas: "item1 item2 item3";
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
-item3{
-        grid-area: item3;
+
+.item1 {
+  grid-area: item1;
 }
+
+.item2 {
+  grid-area: item2;
+}
+
+.item3 {
+  grid-area: item3;
+}
+
 .cards-catalogue {
-    display:flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 43.75rem;
-    width: 20.625rem;
-    color: white;
-    font-family: 'Work Sans', sans-serif;
-    text-align: center;
-    gap: 1.875rem;
+  height: 43.75rem;
+  width: 20.625rem;
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
 }
-.portrait-image {
-    height: 21.875rem;
-    width: 21.875rem;
-    background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
-    background-size: cover;
-    background-position: center;
+.cards-catalogue .portrait-image {
+  height: 21.875rem;
+  width: 21.875rem;
+  background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
+  background-size: cover;
+  background-position: center;
 }
-.texture-image {
-    height: 21.875rem;
-    width: 21.875rem;
-    background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
-    background-size: cover;
-    background-position: center;
+.cards-catalogue .texture-image {
+  height: 21.875rem;
+  width: 21.875rem;
+  background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+  background-size: cover;
+  background-position: center;
 }
-.nature-image {
-    height: 21.875rem;
-    width: 21.875rem;
-    background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
-    background-size: cover;
-    background-position: center;
-}
-
-.footer-catalogue{
-    background-color: white;
-    padding-bottom: 4.25rem;
-    display: flex;
-    flex-direction: column;
-    gap: 3.125rem;
+.cards-catalogue .nature-image {
+  height: 21.875rem;
+  width: 21.875rem;
+  background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+  background-size: cover;
+  background-position: center;
 }
 
+.titular-aboutme {
+  padding-top: 9.375rem;
+  padding-bottom: 9.375rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 21.875rem;
+}
+.titular-aboutme div h1 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 600;
+  text-align: center;
+  color: white;
+}
+.titular-aboutme img {
+  width: auto;
+  border-radius: 1.875rem;
+  height: 18.75rem;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 18.75rem;
+  margin-bottom: 3.125rem;
+}
+
+.cards-aboutme {
+  height: 15.625rem;
+  background-color: white;
+  border-radius: 1.25rem;
+  font-family: "Work Sans", sans-serif;
+  color: black;
+  text-align: center;
+  padding: 0.625rem;
+  width: 10rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
+}
+.cards-aboutme img {
+  height: 1.875rem;
+  width: auto;
+}
+.cards-aboutme h2 {
+  font-size: 1.25rem;
+}
+.cards-aboutme p {
+  font-size: 0.875rem;
+}
+
+.titular-enorme-aboutme {
+  height: 100vh;
+  background-color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 10.625rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
+}
+
+.info-text-aboutme {
+  background-color: white;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
+}
+.info-text-aboutme div h2 {
+  font-family: "Work Sans", sans-serif;
+  font-size: 2.5rem;
+}
+
+.know-me {
+  font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.1875rem;
+}
+.know-me h3 {
+  font-size: 2.5rem;
+}
+
+.personal-info {
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 18.75rem;
+}
+.personal-info div h4 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: grey;
+  font-size: 0.8125rem;
+}
+.personal-info div p {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: rgb(3, 0, 0);
+  font-size: 0.8125rem;
+}
+
+.pharagraph-aboutme {
+  height: 6.25rem;
+  width: 31.25rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+
+.proyect1-aboutme {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.proyect1-aboutme div p {
+  width: 34.375rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+.proyect1-aboutme img {
+  height: 28.125rem;
+  width: auto;
+}
+.proyect1-aboutme div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4.375rem;
+}
+
+.proyect2-aboutme {
+  background-color: white;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 3.125rem;
+}
+.proyect2-aboutme div p {
+  width: 34.375rem;
+  font-family: "Work Sans", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: end;
+}
+.proyect2-aboutme div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 6.25rem;
+}
+.proyect2-aboutme img {
+  height: 28.125rem;
+  width: auto;
+}
+
+.midway {
+  font-size: 3.4375rem;
+  width: 100%;
+}
+
+/*components*/
 /*-------------------------*/
 /*-------BUTTONS FOOTER: subscribe-------*/
 /*-------------------------*/
 .button-4 {
-        appearance: none;
-        background-color: #FAFBFC;
-        border: 1px solid rgba(27, 31, 35, 0.15);
-        border-radius: 6px;
-        box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-        box-sizing: border-box;
-        color: #24292E;
-        cursor: pointer;
-        display: inline-block;
-        font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 20px;
-        list-style: none;
-        padding: 6px 16px;
-        position: relative;
-        transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-        user-select: none;
-        -webkit-user-select: none;
-        touch-action: manipulation;
-        vertical-align: middle;
-        white-space: nowrap;
-        word-wrap: break-word;
+  appearance: none;
+  background-color: #FAFBFC;
+  border: 1px solid rgba(27, 31, 35, 0.15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
+  box-sizing: border-box;
+  color: #24292E;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  padding: 6px 16px;
+  position: relative;
+  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  word-wrap: break-word;
 }
+
 .button-4:hover {
-        background-color: #cfdfff;
-        text-decoration: none;
-        transition-duration: 0.1s;
+  background-color: #cfdfff;
+  text-decoration: none;
+  transition-duration: 0.1s;
 }
+
 .button-4:active {
-        background-color: #EDEFF2;
-        box-shadow: rgba(8, 8, 8, 0.2) 0 1px 0 inset;
-        transition: none 0s;
+  background-color: #EDEFF2;
+  box-shadow: rgba(8, 8, 8, 0.2) 0 1px 0 inset;
+  transition: none 0s;
 }
+
 .button-4:focus {
-        outline: 1px transparent;
+  outline: 1px transparent;
 }
 
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CONTACT----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.header-gradient-contact{
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.8421743697478992) 53%, rgba(0,0,0,0) 100%);
-    margin-top: 0;
-    padding-top: 1.875rem ;
-}
-
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.header-gradient-aboutme{ 
-    background: linear-gradient(180deg, rgba(112,17,14,1) 0%, rgba(55,9,7,1) 46%, rgba(0,0,0,1) 100%);
-    margin-top: 0;
-    padding-top: 1.875rem ;
-}
-
-.titular-aboutme{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction:row;
-    justify-content: center;
-    gap: 350px;
-    padding-top: 9.375rem;
-    padding-bottom:9.375rem ;
-}
-
-.titular-aboutme div h1{
-    font-family: 'Work Sans', sans-serif;
-    font-size: 3.125rem;
-    font-weight: 600;
-    text-align: center;
-    color:white;
-}
-
-.titular-aboutme img{
-    width: auto; 
-    border-radius: 1.875rem;
-    height: 18.75rem;
-}
 .custom-button {
-    display: inline-block;
-    padding: 15px;
-    border-radius: 10px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 5px;
-    color: black;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+  display: inline-block;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 5px;
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
-
-/* Cambio de estilo al pasar el mouse */
 .custom-button:hover {
-    background-color: black;
-    color: white;
-    border-color: white;
+  background-color: black;
+  color: white;
+  border-color: white;
 }
 
-.cards-aboutme{
-    height: 15.625rem;
-    background-color: white;
-    border-radius: 1.25rem;
-    font-family: 'Work Sans', sans-serif;
-    color: black;
+/*mediaquery*/
+@media (min-width: 1330px) and (max-width: 1600px) {
+  .line {
+    display: none;
+  }
+}
+@media screen and (max-width: 1335px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .section-gallery {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: .625rem;
-    width:10rem;
-}
-
-.cards-aboutme img{
-    height: 1.875rem;
-    width: auto;
-}
-
-.cards-aboutme h2{
-    font-size: 1.25rem;
-}
-
-.cards-aboutme p{
-    font-size: .875rem;
-}
-
-.container-cards{
-    display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    gap: 18.75rem;
-    margin-bottom: 3.125rem;
-}   
-
-.titular-enorme-aboutme{
-    height: 100vh;
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items:center;
-    justify-content: center;
-    font-family: 'Work Sans', sans-serif ;
-    font-size: 10.625rem;
-    font-weight: 800;
-}
-
-
-/* INICIO infor personal*/
-.info-text-aboutme{
-    background-color: white;
-    height: 50vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.info-text-aboutme div h2{
-    font-family: 'Work Sans' , sans-serif;
-    font-size: 2.5rem;
-}
-
-.item1{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    font-family: 'Work Sans' , sans-serif ;
-}
-.item1 h3{
-    font-size: 2.5rem;
-}   
-
-.personal-info {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    gap: 18.75rem;
-    padding-top: 3.75rem;
-}
-.pharagraph-aboutme{
-    height: 6.25rem;
-    width: 31.25rem;
-}
-.personal-info div h4{
-    font-family: 'Work Sans' , sans-serif;
-    font-weight: 400;
-    color: grey;
-    font-size: .8125rem;
-}   
-.personal-info div p{
-    font-family: 'Work Sans' , sans-serif;
-    font-weight: 500;
-    color: rgb(3, 0, 0);
-    font-size: .8125rem;
-}   
-.projects{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-}
-.proyect1-aboutme{
-    background-color: white;
-    height: 100vh;
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap:3.125rem;
-}   
-.proyect1-aboutme div p{
-    width: 34.375rem;
-    font-family: 'Work Sans' , sans-serif;
-    font-size: .875rem;
-    font-weight: 500;
-}
-
-.proyect2-aboutme{
-    background-color: white;
-    height: 100vh;
-    width:100%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    justify-content: center;
-    align-items: center;
-    gap:3.125rem;
-}   
-.proyect2-aboutme div p{
-    width: 34.375rem;
-    font-family: 'Work Sans' , sans-serif;
-    font-size: .875rem;
-    font-weight: 500;
-    text-align: end;
-}
-.proyect1-aboutme img{
-    height: 28.125rem;
-    width: auto;
-}
-
-.proyect2-aboutme img{
-    height: 28.125rem;
-    width: auto;
-}
-
-.proyect2-aboutme div{
-    display: flex ;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 6.25rem;
-}
-
-.proyect1-aboutme div{
-    display: flex ;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: flex-end;
+    margin-top: 15.625rem;
+    margin-bottom: 12.5rem;
     gap: 4.375rem;
-}
-
-.midway {
-    font-size: 3.4375rem;
-    width: 100%;
-}
-
-
-/*-------------------------*/
-/*-------PAGES: BOOKS-------*/
-/*-------------------------*/
-.grid-container {
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(4,25%);
-    grid-template-rows: repeat(4,75vh);
-    grid-template-areas:
-"item1 item1 item1 item1"
-"item2 item2 item2 item2"
-"item3 item3 item3 item3"
-"item4 item4 item4 item4"
-;
-}
-
-.item1{
-    grid-area: item1;
-}
-
-.item2{
-    grid-area: item2;
-}
-
-.item3{
-    grid-area: item3;
-}
-
-.fonts-books{
-    font-family: 'Work Sans' , sans-serif ;
-    font-size: 5.625rem;
-    color: rgb(255, 255, 255);
-}
-
-.line{
-    width: 85.3127rem;
-    height: .1875rem;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .line {
+    width: 80%;
+    height: 0.1875rem;
     background: #530d0a;
     margin-bottom: 5.3125rem;
-}
-
-.line.bottom{
-    width: 85.3127rem;
-    height: .1875rem;
+  }
+  .line.bottom {
+    width: 50%;
+    height: 0.1875rem;
     background: #530d0a;
     margin-top: 5.3125rem;
+  }
+  .fonts-books {
+    font-family: "Work Sans", sans-serif;
+    font-size: 3.625rem;
+  }
+  .personal-info {
+    gap: 6.25rem;
+  }
+  .titular-enorme-aboutme {
+    font-size: 7rem;
+    padding-top: 2.75rem;
+  }
+  .info-text-aboutme {
+    height: 80vh;
+  }
 }
-
-.images-books{
-    border-radius: 1.25rem;
-    height: 11.875rem;
-    width: 9.375rem;
-    border: solid .0625rem rgba(255, 255, 255, 0.226);
-}
-
-.sections-books{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content:center ;
-    align-items: center;
-    height: 75vh;
-}
-
-.display-images{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3.125rem;
+@media screen and (max-width: 1239px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  header {
     justify-content: center;
-    margin-top:2.1875rem;
-}
-
-.display-images-last{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 3.125rem;
-    justify-content: center;
-    margin-top:2.1875rem;
-    margin-bottom: 7.5rem;
-}
-
-.line-bottom{
-    width: 85.3127rem;
-    height: .1875rem;
-    background: #530d0a;
-    margin-top: 5.3125rem;
-}
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    /*-------------------------------------------------------PAGES: BOOKS footer----------------------------------------------------------------------------*/
-    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.grid-footer{
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    gap: 140px;
-    grid-area: item4;
-    background-color: rgb(255, 255, 255);
-    justify-content: center;
-}
-
-.primer-footer{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 4.375rem;
-}
-
-.newsletter{
-    width: 28.125rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    font-family: 'Work Sans', sans-serif;
-}
-.newsletter p{
-    font-family: 'Inter', sans-serif;
-    font-size: .75rem;
-}
-
-.social-media{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 3.125rem;
-}
-
-.info-final{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.info-final div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
     align-items: center;
     gap: 1.25rem;
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 1239PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    @media screen and (max-width: 1239px){
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-header {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap:1.25rem;
-}
-.navbar {
+  }
+  .navbar {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.portrait-image {
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .portrait-image {
     height: 15.625rem;
     width: 15.625rem;
     background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
     background-size: cover;
     background-position: center;
-}
-.texture-image {
+  }
+  .texture-image {
     height: 15.625rem;
     width: 15.625rem;
     background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
     background-size: cover;
     background-position: center;
-}
-.nature-image {
+  }
+  .nature-image {
     height: 15.625rem;
     width: 15.625rem;
     background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
     background-size: cover;
     background-position: center;
-}
-.cards-catalogue{
+  }
+  .cards-catalogue {
     font-size: 14px;
+  }
 }
+@media screen and (max-width: 1200px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .display-images-last {
+    margin-bottom: 2.5rem;
+  }
+  .display-images img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images-last img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images {
+    gap: 30px;
+  }
+  .display-images-last {
+    gap: 30px;
+  }
 }
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 1024PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
 @media screen and (max-width: 1024px) {
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-header {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  header {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    gap:1.25rem;
-}
-.navbar {
+    gap: 1.25rem;
+  }
+  .navbar {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-}
-.titular-aboutme{
-gap: 200px;
-}
-.container-cards{
+  }
+  .titular-aboutme {
+    gap: 200px;
+  }
+  .container-cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -845,91 +815,145 @@ gap: 200px;
     align-items: center;
     gap: 6.375rem;
     margin-bottom: 3.125rem;
-}  
-.titular-enorme-aboutme{
+  }
+  .titular-enorme-aboutme {
     font-size: 4.625rem;
-    height:60vh;
-}
-.personal-info {
+    height: 60vh;
+  }
+  .personal-info {
     gap: 3.75rem;
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.portrait-image {
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .portrait-image {
     height: 15.625rem;
     width: 15.625rem;
-}
-    
-.texture-image {
+  }
+  .texture-image {
     height: 15.625rem;
     width: 15.625rem;
-}
-
-.nature-image {
+  }
+  .nature-image {
     height: 15.625rem;
     width: 15.625rem;
-}
-.main-catalogue {
+  }
+  .main-catalogue {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, auto); 
-    grid-template-areas:
-"item1"
-"item2"
-"item3";
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "item1" "item2" "item3";
     justify-content: center;
     align-items: center;
     justify-items: center;
-    height: auto; 
+    height: auto;
     gap: 2rem;
     padding: 2rem;
-}
-.cards-catalogue {
+  }
+  .cards-catalogue {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 20.625rem; 
+    max-width: 20.625rem;
     color: white;
-    font-family: 'Work Sans', sans-serif;
+    font-family: "Work Sans", sans-serif;
     text-align: center;
     gap: 1.875rem;
     max-width: 100%;
-}
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 768PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-
-    @media screen and (max-width: 768px) {
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-header {
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .tecer-pagina-figma {
+    background-color: white;
+    display: flex;
     flex-direction: column;
+    justify-content: space-around;
     align-items: center;
-    gap:2rem;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    height: 100vh;
+    padding-top: 40px;
+  }
+  .tecer-pagina-figma section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  .tecer-pagina-figma section div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 17.5rem;
+    height: 18.375rem;
+    font-family: "Work Sans", sans-serif;
+    gap: 15px;
+  }
+  .tercer-pagina-figma section div ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+  }
+  .tecer-pagina-figma div ul li img {
+    height: 5.5rem;
+    width: 7.625rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.432);
+  }
+  .section-gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 15.625rem;
+    margin-bottom: 12.5rem;
+    gap: 4.375rem;
+  }
+  .gallery-images1 {
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+  }
+  .tecer-pagina-figma section .div-jordan {
+    height: 25.25rem;
+    width: 20rem;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .line {
+    display: none;
+  }
 }
-.navbar {
+@media screen and (max-width: 768px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  header {
     flex-direction: column;
     align-items: center;
     gap: 2rem;
-}
-.titular-aboutme img{
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .titular-aboutme img {
     height: 200px;
     width: auto;
-}
-.header-gradient-aboutme nav{
+  }
+  .header-gradient-aboutme nav {
     height: 200px;
-    padding:0px;
+    padding: 0px;
     width: 100%;
-}
-.container-cards{
+  }
+  .container-cards {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -937,425 +961,731 @@ header {
     align-items: center;
     gap: 9.375rem;
     margin-bottom: 3.125rem;
-}   
-.info-text-aboutme{
-    height:90vh;
-}
-.titular-enorme-aboutme{
+  }
+  .info-text-aboutme {
+    height: 90vh;
+  }
+  .titular-enorme-aboutme {
     font-size: 3.625rem;
-    height:50vh;
-}
-.personal-info {
+    height: 50vh;
+  }
+  .personal-info {
     gap: 3.75rem;
-}
-
-.proyect1-aboutme{
-    gap:3.125rem;
-}   
-.proyect2-aboutme{
-    height: 100vh;;
+  }
+  .proyect1-aboutme {
+    gap: 3.125rem;
+  }
+  .proyect2-aboutme {
+    height: 100vh;
     display: flex;
     gap: 10px;
-    padding-top:3.75rem;
-    padding-bottom:3.75rem;
-}   
-.proyect2-aboutme div p{
+    padding-top: 3.75rem;
+    padding-bottom: 3.75rem;
+  }
+  .proyect2-aboutme div p {
     text-align: center;
-}
-.proyect1-aboutme img{
+  }
+  .proyect1-aboutme img {
     height: 37.5rem;
-}
-.proyect2-aboutme img{
+  }
+  .proyect2-aboutme img {
     height: 37.5rem;
-}
-.proyect2-aboutme div{
+  }
+  .proyect2-aboutme div {
     text-align: center;
     justify-items: center;
     justify-content: center;
-    gap: .75rem;
-}
-.proyect1-aboutme div{
+    gap: 0.75rem;
+  }
+  .proyect1-aboutme div {
     text-align: center;
     justify-items: center;
     justify-content: center;
-    gap: .75rem;
-}
-
-.titular-aboutme{
-    gap:100px;
-}
-
-
-footer{
+    gap: 0.75rem;
+  }
+  .titular-aboutme {
+    gap: 100px;
+  }
+  footer {
     background-color: rgb(214, 214, 214);
-    height:500px;
-    gap: 3.125rem ;
-}
-.primer-footer{
-    gap:20px;
-    flex-direction:column ;
-}
-.social-media li a img{
+    height: 550px;
+    gap: 3.125rem;
+  }
+  .primer-footer {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .social-media li a img {
     height: 17px;
-}
-.newsletter{
+  }
+  .newsletter {
     width: 18.75rem;
-    gap:1.25rem;
-}
-.newsletter p{
-    font-size: 10px;
-}
-.info-final div{
     gap: 1.25rem;
-    margin-bottom: .625rem ;
-}
-.info-final div img{
+  }
+  .newsletter p {
+    font-size: 10px;
+  }
+  .info-final div {
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .info-final div img {
     height: 30px;
     width: auto;
-}
-.info-final div h4{
+  }
+  .info-final div h4 {
     font-size: 8px;
-}
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.primer-footer-catalogue{
-    gap:40px;
-    flex-direction:column ;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .primer-footer-catalogue {
+    gap: 40px;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding-top: 4.375rem;
-}
-.footer-catalogue{
+  }
+  .footer-catalogue {
     background-color: white;
     padding-bottom: 4.25rem;
     display: flex;
     flex-direction: column;
     gap: 2.125rem;
     justify-content: center;
-
-}
-.footer-contact{
+  }
+  .footer-contact {
     height: 600px;
-}
-}
-
-
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 550PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-    @media screen and (max-width: 550px) {
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titular-aboutme img{
-    height: 200px;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .index-body-background {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img/media-4.jpg);
     width: auto;
-}
-.titular-enorme-aboutme{
-    font-size: 2.625rem;
-    height:60vh;
-}
-.pharagraph-aboutme{
-    height: 6.25rem;
-    width: 350px;
-    text-align: center;
-}
-.proyect1-aboutme div {
-    width: 100%;
-}
-.proyect2-aboutme div {
-    width: 100%;
-}
-.proyect1-aboutme div button{
-    width: 50%;
-}
-.proyect2-aboutme div button{
-    width: 50%;
-}
-.proyect1-aboutme div p{
-    width: 350px;
-    font-weight: 500;
-}
-.proyect2-aboutme div p{
-    width: 350px;
-    text-align: center;}
-footer{
-    background-color: rgb(214, 214, 214);
-    height:500px;
-    gap: 3.125rem ;
-}
-.primer-footer{
-    gap:20px;
-    flex-direction:column ;
-}
-.social-media li a img{
-    height: 17px;
-}
-.newsletter{
-    width: 18.75rem;
-    gap:1.25rem;
-}
-.newsletter p{
-    font-size: 10px;
-}
-.info-final div{
-    gap: 1.25rem;
-    margin-bottom: .625rem ;
-}
-.info-final div img{
-    height: 30px;
-    width: auto;
-}
-.info-final div h4{
-    font-size: 8px;
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.primer-footer-catalogue{
-    gap:40px;
-    flex-direction:column ;
-}
-.footer-contact{
-    height: 600px;
-}
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 455PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    @media screen and (max-width: 455px) {
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-header {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .section-landing div {
+    width: 12.5rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-header div img {
-    width: 8rem;
-}
-
-        .navbar {
-        flex-direction: column;
-        align-items: center;
+    text-align: end;
     gap: 1rem;
+  }
+  .section-landing img {
+    height: 14.375rem;
+    width: auto;
+  }
+  .images-column li img {
+    height: 5.5rem;
+    width: 6rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.432);
+  }
+  .tercer-pagina-figma section div ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tecer-pagina-figma {
+    gap: 20px;
+  }
+  .div-jordan {
+    height: 32rem;
+    width: 23rem;
+  }
 }
-.titular-aboutme div h1{
-    font-size: 2.125rem;;
-}
-.titular-enorme-aboutme{
+@media screen and (max-width: 550px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .titular-aboutme img {
+    height: 200px;
+    width: auto;
+  }
+  .titular-enorme-aboutme {
     font-size: 2.625rem;
-    height:60vh;
-}
-.personal-info {
-    gap: .75rem;
-}
-.pharagraph-aboutme{
+    height: 60vh;
+  }
+  .pharagraph-aboutme {
     height: 6.25rem;
     width: 350px;
     text-align: center;
-}
-.proyect1-aboutme div p{
+  }
+  .proyect1-aboutme div {
+    width: 100%;
+  }
+  .proyect2-aboutme div {
+    width: 100%;
+  }
+  .proyect1-aboutme div button {
+    width: 50%;
+  }
+  .proyect2-aboutme div button {
+    width: 50%;
+  }
+  .proyect1-aboutme div p {
     width: 350px;
     font-weight: 500;
-}
-.proyect2-aboutme div p{
+  }
+  .proyect2-aboutme div p {
     width: 350px;
     text-align: center;
-}
-.titular-aboutme{
-    padding-top: 5.375rem;}
-.proyect1-aboutme{
-    gap:2.125rem;
-}   
-.proyect2-aboutme{
-    gap:2.125rem;
-    } 
-.proyect1-aboutme img{
-    height: 27.5rem;
-    }
-    .proyect2-aboutme img{
-    height: 27.5rem;
-    }
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-.primer-footer-catalogue{
-    gap:40px;
-    flex-direction:column ;
-}
-footer{
-    height: 500px;
-}
-.footer-contact{
+  }
+  footer {
+    background-color: rgb(214, 214, 214);
+    height: 550px;
+    gap: 3.125rem;
+  }
+  .primer-footer {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .social-media li a img {
+    height: 17px;
+  }
+  .newsletter {
+    width: 18.75rem;
+    gap: 1.25rem;
+  }
+  .newsletter p {
+    font-size: 10px;
+  }
+  .info-final div {
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .info-final div img {
+    height: 30px;
+    width: auto;
+  }
+  .info-final div h4 {
+    font-size: 8px;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .primer-footer-catalogue {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .footer-contact {
     height: 600px;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .index-body-background {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img/media-4.jpg);
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .welcome {
+    width: 21.875rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .section-landing div {
+    width: 12.5rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: end;
+    gap: 1rem;
+  }
+  .section-landing img {
+    height: 14.375rem;
+    width: auto;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .display-images-last {
+    margin-bottom: 1.5rem;
+  }
+  .fonts-books {
+    font-size: 2.625rem;
+  }
+  .display-images img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images-last img {
+    height: 150px;
+    width: auto;
+  }
 }
-}
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 390PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    @media screen and (max-width: 390px){
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titular-aboutme img{
+@media screen and (max-width: 550px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .titular-aboutme img {
     height: 200px;
     width: auto;
-}
-footer{
+  }
+  .titular-enorme-aboutme {
+    font-size: 2.625rem;
+    height: 60vh;
+  }
+  .pharagraph-aboutme {
+    height: 6.25rem;
+    width: 350px;
+    text-align: center;
+  }
+  .proyect1-aboutme div {
+    width: 100%;
+  }
+  .proyect2-aboutme div {
+    width: 100%;
+  }
+  .proyect1-aboutme div button {
+    width: 50%;
+  }
+  .proyect2-aboutme div button {
+    width: 50%;
+  }
+  .proyect1-aboutme div p {
+    width: 350px;
+    font-weight: 500;
+  }
+  .proyect2-aboutme div p {
+    width: 350px;
+    text-align: center;
+  }
+  footer {
     background-color: rgb(214, 214, 214);
-    height:500px;
-    gap: 3.125rem ;
-}
-.primer-footer{
-    gap:20px;
-}
-.social-media li a img{
+    height: 550px;
+    gap: 3.125rem;
+  }
+  .primer-footer {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .social-media li a img {
     height: 17px;
-}
-.newsletter{
+  }
+  .newsletter {
     width: 18.75rem;
-    gap:1.25rem;
-}
-.newsletter p{
-    font-size: 10px;
-}
-.info-final div{
     gap: 1.25rem;
-    margin-bottom: .625rem ;
-}
-.info-final div img{
+  }
+  .newsletter p {
+    font-size: 10px;
+  }
+  .info-final div {
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .info-final div img {
     height: 30px;
     width: auto;
-}
-.info-final div h4{
+  }
+  .info-final div h4 {
     font-size: 8px;
-}
-.titular-enorme-aboutme{
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .primer-footer-catalogue {
+    gap: 40px;
+    flex-direction: column;
+  }
+  .footer-contact {
+    height: 600px;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .index-body-background {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img/media-4.jpg);
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .welcome {
+    width: 21.875rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .section-landing div {
+    width: 12.5rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: end;
+    gap: 1rem;
+  }
+  .section-landing img {
+    height: 14.375rem;
+    width: auto;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .display-images-last {
+    margin-bottom: 1.5rem;
+  }
+  .fonts-books {
     font-size: 2.625rem;
-    height:50vh;
+  }
+  .display-images img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images-last img {
+    height: 150px;
+    width: auto;
+  }
 }
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-.primer-footer-catalogue{
-    gap:40px;
-    flex-direction:column ;}
+@media screen and (max-width: 455px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+  header div img {
+    width: 8rem;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  .titular-aboutme div h1 {
+    font-size: 2.125rem;
+  }
+  .titular-enorme-aboutme {
+    font-size: 2.625rem;
+    height: 60vh;
+  }
+  .personal-info {
+    gap: 0.75rem;
+  }
+  .pharagraph-aboutme {
+    height: 6.25rem;
+    width: 350px;
+    text-align: center;
+  }
+  .proyect1-aboutme div p {
+    width: 350px;
+    font-weight: 500;
+  }
+  .proyect2-aboutme div p {
+    width: 350px;
+    text-align: center;
+  }
+  .titular-aboutme {
+    padding-top: 5.375rem;
+  }
+  .proyect1-aboutme {
+    gap: 2.125rem;
+  }
+  .proyect2-aboutme {
+    gap: 2.125rem;
+  }
+  .proyect1-aboutme img {
+    height: 27.5rem;
+  }
+  .proyect2-aboutme img {
+    height: 27.5rem;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .primer-footer-catalogue {
+    gap: 40px;
+    flex-direction: column;
+  }
+  footer {
+    height: 500px;
+    width: 100%;
+  }
+  .primer-footer {
+    width: 100%;
+  }
+  .primer-footer .newsletter {
+    width: 100%;
+  }
+  .footer-contact {
+    height: 600px;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .index-body-background {
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img/media-4.jpg);
+    width: auto;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  .welcome {
+    width: 21.875rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+  .first-class {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 6.875rem;
+    align-items: center;
+    margin-right: 0;
+    margin-top: 7.5rem;
+  }
+  .first-class section div p {
+    font-size: 1rem;
+  }
+  .first-class section img {
+    height: 300px;
+    width: auto;
+  }
+  .section-landing {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 1.875rem;
+  }
+  .section-landing div {
+    width: 12.5rem;
+    font-family: "Anonymous Pro", monospace;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: end;
+    gap: 1rem;
+  }
+  .section-landing img {
+    height: 14.375rem;
+    width: auto;
+  }
+  .gallery-images1 img {
+    height: 250px;
+    width: auto;
+  }
+  .section-gallery div img {
+    height: auto;
+    width: 250px;
+  }
+  .images-column li img {
+    height: 3.5rem;
+    width: 4rem;
+    border: 0.0625rem solid rgba(0, 0, 0, 0.432);
+  }
+  .tecer-pagina-figma {
+    gap: 20px;
+  }
+  .tecer-pagina-figma div ul li img {
+    display: none;
+  }
+  .div-jordan {
+    height: 30rem;
+    width: 21rem;
+  }
+  .about-collection p {
+    font-size: 12px;
+  }
+  .display-images-last {
+    margin-bottom: 1.5rem;
+  }
 }
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------MEDIA 320PX----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    @media screen and (max-width: 320px){
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-.titular-aboutme img{
+@media screen and (max-width: 390px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .titular-aboutme img {
     height: 200px;
     width: auto;
+  }
+  footer {
+    background-color: rgb(214, 214, 214);
+    height: 500px;
+    gap: 3.125rem;
+  }
+  .primer-footer {
+    gap: 20px;
+    width: 100%;
+  }
+  .social-media li a img {
+    height: 17px;
+  }
+  .newsletter {
+    width: 100%;
+    gap: 1.25rem;
+  }
+  .newsletter p {
+    font-size: 10px;
+  }
+  .info-final div {
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .info-final div img {
+    height: 30px;
+    width: auto;
+  }
+  .info-final div h4 {
+    font-size: 8px;
+  }
+  .titular-enorme-aboutme {
+    font-size: 2.625rem;
+    height: 50vh;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .primer-footer-catalogue {
+    gap: 40px;
+    flex-direction: column;
+  }
 }
-.titular-enorme-aboutme{
+@media screen and (max-width: 320px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .titular-aboutme img {
+    height: 200px;
+    width: auto;
+  }
+  .titular-enorme-aboutme {
     font-size: 1.625rem;
-    height:40vh;
-}
-.pharagraph-aboutme{
+    height: 40vh;
+  }
+  .pharagraph-aboutme {
     height: 6.25rem;
     width: 100%;
     text-align: center;
-}
-    .proyect1-aboutme img{
+  }
+  .proyect1-aboutme img {
     height: 17.5rem;
-    }
-.proyect2-aboutme img{
+  }
+  .proyect2-aboutme img {
     height: 17.5rem;
-}
-.proyect1-aboutme div p{
+  }
+  .proyect1-aboutme div p {
     width: 100%;
     font-weight: 500;
     font-size: 12px;
-}
-.proyect2-aboutme div p{
+  }
+  .proyect2-aboutme div p {
     width: 100%;
     text-align: center;
     font-size: 12px;
-}
-.info-text-aboutme{
-    height:50vh;
+  }
+  .info-text-aboutme {
+    height: 50vh;
     width: 100%;
-    justify-content:center ;
-}
-.info-text-aboutme h3{
+    justify-content: center;
+  }
+  .info-text-aboutme h3 {
     font-size: 20px;
-}
-.info-text-aboutme div h2{
+  }
+  .info-text-aboutme div h2 {
     font-size: 20px;
-}
-.info-text-aboutme div p{
+  }
+  .info-text-aboutme div p {
     font-size: 14px;
-}
-.info-text-aboutme div{
-    width:90%;
-}
-
-.personal-info div h4{
+  }
+  .info-text-aboutme div {
+    width: 90%;
+  }
+  .personal-info div h4 {
     font-size: 12px;
-}
-
-.personal-info div p{
+  }
+  .personal-info div p {
     font-size: 12px;
-}
-
-footer{
+  }
+  footer {
     background-color: rgb(214, 214, 214);
-    height:400px;
-    gap: 3.125rem ;
-    height: 500px;
-}
-
-.primer-footer{
-    gap:20px;
-}
-
-.social-media li a img{
+    gap: 3.125rem;
+    height: 550px;
+    width: 100%;
+  }
+  .primer-footer {
+    gap: 20px;
+  }
+  .social-media li a img {
     height: 17px;
-}
-
-.newsletter{
+  }
+  .newsletter {
     width: 18.75rem;
-    gap:1.25rem;
-}
-
-.newsletter p{
-    font-size: 10px;
-}
-
-.info-final div{
     gap: 1.25rem;
-    margin-bottom: .625rem ;
-}
-
-.info-final div img{
+  }
+  .newsletter p {
+    font-size: 10px;
+  }
+  .info-final div {
+    gap: 1.25rem;
+    margin-bottom: 0.625rem;
+  }
+  .info-final div img {
     height: 30px;
     width: auto;
-}
-.info-final div h4{
+  }
+  .info-final div h4 {
     font-size: 8px;
-}
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
-/*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-
-.cards-catalogue{
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .cards-catalogue {
     font-size: 10px;
     width: 100%;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------BOOKS----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .grid-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 20rem);
+    grid-template-rows: auto 34.375rem;
+    grid-template-areas: "item1" "item2";
+  }
+  .sections-books {
+    height: auto;
+  }
+  .display-images {
+    flex-direction: column;
+  }
+  .display-images-last {
+    flex-direction: column;
+  }
 }
-}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,122 @@
+@media screen and (max-width: 320px){
+
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .titular-aboutme img{
+        height: 200px;
+        width: auto;
+    }
+    .titular-enorme-aboutme{
+        font-size: 1.625rem;
+        height:40vh;
+    }
+    .pharagraph-aboutme{
+        height: 6.25rem;
+        width: 100%;
+        text-align: center;
+    }
+        .proyect1-aboutme img{
+        height: 17.5rem;
+        }
+    .proyect2-aboutme img{
+        height: 17.5rem;
+    }
+    .proyect1-aboutme div p{
+        width: 100%;
+        font-weight: 500;
+        font-size: 12px;
+    }
+    .proyect2-aboutme div p{
+        width: 100%;
+        text-align: center;
+        font-size: 12px;
+    }
+    .info-text-aboutme{
+        height:50vh;
+        width: 100%;
+        justify-content:center ;
+    }
+    .info-text-aboutme h3{
+        font-size: 20px;
+    }
+    .info-text-aboutme div h2{
+        font-size: 20px;
+    }
+    .info-text-aboutme div p{
+        font-size: 14px;
+    }
+    .info-text-aboutme div{
+        width:90%;
+    }
+    
+    .personal-info div h4{
+        font-size: 12px;
+    }
+    
+    .personal-info div p{
+        font-size: 12px;
+    }
+    
+    footer{
+        background-color: rgb(214, 214, 214);
+        gap: 3.125rem ;
+        height: 550px;
+        width: 100%;
+    }
+    
+    .primer-footer{
+        gap:20px;
+    }
+    
+    .social-media li a img{
+        height: 17px;
+    }
+    
+    .newsletter{
+        width: 18.75rem;
+        gap:1.25rem;
+    }
+    
+    .newsletter p{
+        font-size: 10px;
+    }
+    
+    .info-final div{
+        gap: 1.25rem;
+        margin-bottom: .625rem ;
+    }
+    
+    .info-final div img{
+        height: 30px;
+        width: auto;
+    }
+    .info-final div h4{
+        font-size: 8px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    .cards-catalogue{
+        font-size: 10px;
+        width: 100%;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------BOOKS----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .grid-container {
+        width: 100%;
+        @include grid (repeat(1,20rem), auto 34.375rem,
+    "item1"
+    "item2")
+    }
+    .sections-books{
+        height: auto;}
+    .display-images{
+        flex-direction: column;
+    }
+    .display-images-last{
+        flex-direction: column;
+    }
+    }

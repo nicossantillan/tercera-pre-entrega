@@ -1,0 +1,180 @@
+@media screen and (max-width: 768px) {
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    
+    header {
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .titular-aboutme img{
+        height: 200px;
+        width: auto;
+    }
+    .header-gradient-aboutme nav{
+        height: 200px;
+        padding:0px;
+        width: 100%;
+    }
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 9.375rem;
+        margin-bottom: 3.125rem;
+    }   
+    .info-text-aboutme{
+        height:90vh;
+    }
+    .titular-enorme-aboutme{
+        font-size: 3.625rem;
+        height:50vh;
+    }
+    .personal-info {
+        gap: 3.75rem;
+    }
+    
+    .proyect1-aboutme{
+        gap:3.125rem;
+    }   
+    .proyect2-aboutme{
+        height: 100vh;;
+        display: flex;
+        gap: 10px;
+        padding-top:3.75rem;
+        padding-bottom:3.75rem;
+    }   
+    .proyect2-aboutme div p{
+        text-align: center;
+    }
+    .proyect1-aboutme img{
+        height: 37.5rem;
+    }
+    .proyect2-aboutme img{
+        height: 37.5rem;
+    }
+    .proyect2-aboutme div{
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        gap: .75rem;
+    }
+    .proyect1-aboutme div{
+        text-align: center;
+        justify-items: center;
+        justify-content: center;
+        gap: .75rem;
+    }
+    
+    .titular-aboutme{
+        gap:100px;
+    }
+    
+    
+    footer{
+        background-color: rgb(214, 214, 214);
+        height:550px;
+        gap: 3.125rem ;
+    }
+    .primer-footer{
+        gap:20px;
+        flex-direction:column ;
+    }
+    .social-media li a img{
+        height: 17px;
+    }
+    .newsletter{
+        width: 18.75rem;
+        gap:1.25rem;
+    }
+    .newsletter p{
+        font-size: 10px;
+    }
+    .info-final div{
+        gap: 1.25rem;
+        margin-bottom: .625rem ;
+    }
+    .info-final div img{
+        height: 30px;
+        width: auto;
+    }
+    .info-final div h4{
+        font-size: 8px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .primer-footer-catalogue{
+        gap:40px;
+        flex-direction:column ;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        padding-top: 4.375rem;
+    }
+    .footer-catalogue{
+        background-color: white;
+        padding-bottom: 4.25rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2.125rem;
+        justify-content: center;
+    
+    }
+    .footer-contact{
+        height: 600px;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .index-body-background{
+        background-color: rgb(0, 0, 0);
+        background-image: url(../assets/img/media-4.jpg);
+        width:auto;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+    .section-landing div{
+        width:12.5rem;
+        font-family: 'Anonymous Pro', monospace;
+        color:white; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: end;
+        gap:1rem;
+    }
+    .section-landing img{
+        height: 14.375rem;
+        width: auto;
+    }
+    .images-column li img{
+        height: 5.5rem;
+        width: 6rem;
+        border: .0625rem solid rgba(0, 0, 0, 0.432);
+    }
+    .tercer-pagina-figma section div ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;    
+        justify-content: center;
+    }
+    .tecer-pagina-figma{
+        gap:20px;
+    }
+    .div-jordan{
+        height: 32rem;
+        width: 23rem;
+    }
+    }
+    

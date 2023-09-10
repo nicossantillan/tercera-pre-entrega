@@ -1,0 +1,149 @@
+@media screen and (max-width: 1024px) {
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    header {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap:1.25rem;
+    }
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .titular-aboutme{
+    gap: 200px;
+    }
+    .container-cards{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 6.375rem;
+        margin-bottom: 3.125rem;
+    }  
+    .titular-enorme-aboutme{
+        font-size: 4.625rem;
+        height:60vh;
+    }
+    .personal-info {
+        gap: 3.75rem;
+    }
+    
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .portrait-image {
+        height: 15.625rem;
+        width: 15.625rem;
+    }
+        
+    .texture-image {
+        height: 15.625rem;
+        width: 15.625rem;
+    }
+    
+    .nature-image {
+        height: 15.625rem;
+        width: 15.625rem;
+    }
+    .main-catalogue {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto); 
+        grid-template-areas:
+    "item1"
+    "item2"
+    "item3";
+        justify-content: center;
+        align-items: center;
+        justify-items: center;
+        height: auto; 
+        gap: 2rem;
+        padding: 2rem;
+    }
+    .cards-catalogue {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 20.625rem; 
+        color: white;
+        font-family: 'Work Sans', sans-serif;
+        text-align: center;
+        gap: 1.875rem;
+        max-width: 100%;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .tecer-pagina-figma{
+        background-color: white;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        height: 100vh;
+        padding-top: 40px;
+    }
+    .tecer-pagina-figma section{
+        display:flex;
+        flex-direction: column-reverse;
+        height: 100vh;
+        align-items: center;
+        gap: 1.5rem;
+    }
+    .tecer-pagina-figma section div{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 17.5rem;
+        height: 18.375rem;
+        font-family: 'Work Sans', sans-serif;
+        gap:15px;
+    }
+    .tercer-pagina-figma section div ul{
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap:10px;
+    }
+    
+    .tecer-pagina-figma div ul li img{
+        height: 5.5rem;
+        width: 7.625rem;
+        border: .0625rem solid rgba(0, 0, 0, 0.432);
+    }
+    .section-gallery{
+        display: flex;
+        flex-direction: row;
+        flex-wrap:wrap;
+        justify-content: center;
+        margin-top: 15.625rem;
+        margin-bottom: 12.5rem;
+        gap: 4.375rem;
+    }
+    
+    .gallery-images1{
+        display: flex;
+        flex-direction: column;
+        gap: 4.375rem;
+    }
+    .tecer-pagina-figma section .div-jordan{
+        height: 25.25rem;
+        width:20rem ;
+    }
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+    /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+    .line{
+        display:none;
+    }
+    }

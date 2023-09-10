@@ -1,0 +1,46 @@
+footer{
+    background-color: rgb(255, 255, 255);
+    height:34.375rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12.5rem;
+    .primer-footer{
+        padding-top: 4.375rem;
+        @include flex (row, wrap, space-around, center, .3125rem);
+        .newsletter{
+            width: 28.125rem;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            font-family: 'Work Sans', sans-serif;
+            p{
+                font-family: 'Inter', sans-serif;
+                font-size: .75rem;
+            }
+            
+        }
+        div{
+            nav{
+                ul{
+                    list-style: none;
+                    @include flex (row, wrap, center, center, 3.125rem);
+                }
+            }
+        }
+    }
+    .info-final{
+        @include flex (row, wrap, space-around, center, .3125rem);
+        div{
+            @include flex (column, wrap, center, center, 1.25rem);
+            margin-bottom: 3.75rem ;
+        }
+    }
+}
+.footer-catalogue{
+    background-color: white;
+    padding-bottom: 4.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+}

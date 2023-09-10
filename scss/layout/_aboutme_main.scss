@@ -1,0 +1,141 @@
+.titular-aboutme{
+    padding-top: 9.375rem;
+    padding-bottom:9.375rem ;
+    @include flex (row, wrap, center, center, 21.875rem);
+    div h1{
+        font-family: 'Work Sans', sans-serif;
+        font-size: 3.125rem;
+        font-weight: 600;
+        text-align: center;
+        color:white;
+    }
+    img{
+        width: auto; 
+        border-radius: 1.875rem;
+        height: 18.75rem;
+    }
+}
+.container-cards{
+    @include flex (row, wrap, center, center, 18.75rem);
+    margin-bottom: 3.125rem;
+}   
+
+.cards-aboutme{
+    height: 15.625rem;
+    background-color: white;
+    border-radius: 1.25rem;
+    font-family: 'Work Sans', sans-serif;
+    color: black;
+    text-align: center;
+    padding: .625rem;
+    width:10rem;
+    @include flex (column, wrap, center, center, .1875rem);
+    img{
+        height: 1.875rem;
+        width: auto;
+    }
+    h2{
+        font-size: 1.25rem;
+    }
+    p{
+        font-size: .875rem;
+    }
+}
+.titular-enorme-aboutme{
+    height: 100vh;
+    background-color: white;
+    font-family: 'Work Sans', sans-serif ;
+    font-size: 10.625rem;
+    font-weight: 800;
+    @include flex (column, wrap, center, center, .1875rem);
+}
+.info-text-aboutme{
+    background-color: white;
+    height: 50vh;
+    @include flex (column, wrap, center, center, .1875rem);
+    div{
+        h2{
+            font-family: 'Work Sans' , sans-serif;
+            font-size: 2.5rem;
+        }
+    } 
+}
+.know-me{
+    font-family: 'Work Sans' , sans-serif ;
+    @include flex (column, wrap, center, center, .1875rem);
+    h3{
+        font-size: 2.5rem;
+    }   
+}
+.personal-info {
+    padding-top: 3.75rem;
+    @include flex (row, wrap, space-around, center, 18.75rem);
+    div{
+        h4{
+            font-family: 'Work Sans' , sans-serif;
+            font-weight: 400;
+            color: grey;
+            font-size: .8125rem;
+        }   
+        p{
+            font-family: 'Work Sans' , sans-serif;
+            font-weight: 500;
+            color: rgb(3, 0, 0);
+            font-size: .8125rem;
+        }  
+    }
+}
+.pharagraph-aboutme{
+    height: 6.25rem;
+    width: 31.25rem;
+}
+.projects{
+    @include flex (column, wrap, center, center, 0);
+}
+.proyect1-aboutme{
+    background-color: white;
+    height: 100vh;
+    width:100%;
+    @include flex (row, wrap, center, center, 3.125rem);
+    div{
+        p{
+            width: 34.375rem;
+            font-family: 'Work Sans' , sans-serif;
+            font-size: .875rem;
+            font-weight: 500;
+        }
+    }
+    img{
+        height: 28.125rem;
+        width: auto;
+    }
+    div{
+        @include flex (column, wrap, flex-end, center, 4.375rem);
+    }
+}   
+.proyect2-aboutme{
+    background-color: white;
+    height: 100vh;
+    width:100%;
+    @include flex (row-reverse, wrap, center, center, 3.125rem);
+    div{
+        p{
+            width: 34.375rem;
+            font-family: 'Work Sans' , sans-serif;
+            font-size: .875rem;
+            font-weight: 500;
+            text-align: end;
+        }
+    }
+    div{
+        @include flex (column, wrap, flex-start, center, 6.25rem);
+    }
+    img{
+        height: 28.125rem;
+        width: auto;
+    }
+}   
+.midway {
+    font-size: 3.4375rem;
+    width: 100%;
+}

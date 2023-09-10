@@ -1,0 +1,33 @@
+/*primero llamamos a las variables y mixins*/
+@import "./utilities/variables";
+@import "./utilities/mixins";
+
+/*despues lllamamos al reset*/
+@import "./base/reset";
+@import "./base/fonts";
+
+/*layout*/
+@import"./layout/header";
+@import"./layout/index_main";
+@import"./layout/footer";
+@import "./layout/books_main";
+@import "./layout/catalogue_main";
+@import "./layout/aboutme_main";
+
+/*components*/
+@import"./components/bootstrap";
+@import"./components/botones";
+@import"./components/cards";
+
+/*mediaquery*/
+@import"./layout/mediaquery/media1600"; 
+@import"./layout/mediaquery/media1300"; 
+@import"./layout/mediaquery/media1239";
+@import"./layout/mediaquery/media1200";
+@import"./layout/mediaquery/media1024";
+@import"./layout/mediaquery/media768";
+@import"./layout/mediaquery/media550";
+@import"./layout/mediaquery/media550";
+@import"./layout/mediaquery/media455";
+@import"./layout/mediaquery/media390";
+@import"./layout/mediaquery/media320";

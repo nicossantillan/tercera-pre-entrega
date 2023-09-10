@@ -1,0 +1,117 @@
+.index-body-background{
+    background-color: rgb(0, 0, 0);
+    background-image: url(../assets/img/main.png);
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+.first-class{
+    @include flex (column, wrap, left, end, 6.875rem);
+    margin-right: 3.125rem;
+    margin-top: 7.5rem;
+        div{
+            width: 21.875rem;
+            font-family: 'Anonymous Pro', monospace;
+            color:white; 
+            font-size: 1.5rem;
+            text-align: end;
+            display:flex; 
+            justify-content: flex-end;
+        }
+        section{
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 1.875rem;
+            div{
+                width:12.5rem;
+                font-family: 'Anonymous Pro', monospace;
+                color:white; 
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                text-align: end;
+                p{
+                    font-size: 1.3rem;
+                }
+            }
+            img{
+                height: 20.625rem;
+                width: auto;
+            }
+        }
+}
+.section-gallery{
+    margin-top: 40.625rem;
+    margin-bottom: 12.5rem;
+    @include flex (row, wrap, center, center, 4.375rem);
+}
+.gallery-images1{
+    display: flex;
+    flex-direction: column;
+    gap: 4.375rem;
+}
+.tecer-pagina-figma{
+    background-color: white;
+    @include flex (row, wrap, space-around, center, .3125rem);
+    section{
+        display:flex;
+        flex-direction: row;
+        height: 100vh;
+        align-items: center;
+        gap: 2.5rem;
+        div{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 22.5rem;
+            height: 34.375rem;
+            font-family: 'Work Sans', sans-serif;
+            h3{
+                margin-top:15px;
+                font-size: .8125rem;
+            }
+            h2{
+                font-size: 1.9375rem;
+            }
+            p{
+                font-size: .875rem;
+                text-align: justify;
+                margin-top: 1.125rem;
+            }
+        }
+        .div-jordan{
+            height: 36.25rem;
+            width: 28.75rem;
+            background-image: url(https://images.unsplash.com/photo-1520930528075-4ea5ead759f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
+            background-position:center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+    div{
+            ul{
+                list-style: none;
+                li{
+                    img{
+                        height: 7.5rem;
+                        width: 10.625rem;
+                        border: .0625rem solid rgba(0, 0, 0, 0.432);
+                        }
+                    }
+            }
+        }
+}
+.about-collection{
+    height: 27.5rem;
+    text-align: center;
+    color:white;
+    font-family: 'Work Sans', sans-serif;
+    @include flex (column, wrap, center, center, .3125rem);
+    p{
+        font-size: .8125rem;
+        width: 70%;
+    }
+    h2{
+        margin-bottom: 3.75rem;
+    }
+}
