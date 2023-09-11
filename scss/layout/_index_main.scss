@@ -50,6 +50,30 @@
     flex-direction: column;
     gap: 4.375rem;
 }
+.animacion-fotos{
+    height: 80vh;
+    width: 100%;
+    background-color: white;
+    @include flex (row, wrap, center, center, 0);
+    section{
+        display: flex;
+        height: 26.875rem;
+        width: 37.5rem;
+        img{
+            width: 0;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            &:hover{
+                cursor: crosshair;
+                width: 18.75rem;
+                opacity: 1;
+                filter: contrast(120%);
+            }
+        }
+    }
+}
 .tecer-pagina-figma{
     background-color: white;
     @include flex (row, wrap, space-around, center, .3125rem);
@@ -60,14 +84,12 @@
         align-items: center;
         gap: 2.5rem;
         div{
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
             width: 22.5rem;
             height: 34.375rem;
             font-family: 'Work Sans', sans-serif;
+            @include flex (column, wrap, center, center, .3125rem);
             h3{
-                margin-top:15px;
+                margin-top:.9375rem;
                 font-size: .8125rem;
             }
             h2{
@@ -77,6 +99,7 @@
                 font-size: .875rem;
                 text-align: justify;
                 margin-top: 1.125rem;
+                margin-bottom: 1rem;
             }
         }
         .div-jordan{

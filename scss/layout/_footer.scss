@@ -5,18 +5,18 @@ footer{
     flex-direction: column;
     flex-wrap: wrap;
     gap: 12.5rem;
+    @include flex (column, wrap, space-around, center, 5rem);
     .primer-footer{
         padding-top: 4.375rem;
-        @include flex (row, wrap, space-around, center, .3125rem);
+        @include flex (row, wrap, space-beetwen, center, 0rem);
         .newsletter{
             width: 28.125rem;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
             font-family: 'Work Sans', sans-serif;
+            @include flex (column, wrap, center, center, 2rem);
             p{
                 font-family: 'Inter', sans-serif;
                 font-size: .75rem;
+                text-align: center;
             }
             
         }
@@ -30,10 +30,13 @@ footer{
         }
     }
     .info-final{
-        @include flex (row, wrap, space-around, center, .3125rem);
+        @include flex (row, wrap, space-around, center, 3rem);
         div{
             @include flex (column, wrap, center, center, 1.25rem);
             margin-bottom: 3.75rem ;
+            img{
+                height: 3.375rem;
+            }
         }
     }
 }

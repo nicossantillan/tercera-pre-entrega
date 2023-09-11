@@ -126,6 +126,36 @@ header nav ul li a:hover {
   gap: 4.375rem;
 }
 
+.animacion-fotos {
+  height: 80vh;
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0;
+}
+.animacion-fotos section {
+  display: flex;
+  height: 26.875rem;
+  width: 37.5rem;
+}
+.animacion-fotos section img {
+  width: 0;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s ease;
+}
+.animacion-fotos section img:hover {
+  cursor: crosshair;
+  width: 18.75rem;
+  opacity: 1;
+  filter: contrast(120%);
+}
+
 .tecer-pagina-figma {
   background-color: white;
   display: flex;
@@ -143,15 +173,18 @@ header nav ul li a:hover {
   gap: 2.5rem;
 }
 .tecer-pagina-figma section div {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   width: 22.5rem;
   height: 34.375rem;
   font-family: "Work Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3125rem;
 }
 .tecer-pagina-figma section div h3 {
-  margin-top: 15px;
+  margin-top: 0.9375rem;
   font-size: 0.8125rem;
 }
 .tecer-pagina-figma section div h2 {
@@ -161,6 +194,7 @@ header nav ul li a:hover {
   font-size: 0.875rem;
   text-align: justify;
   margin-top: 1.125rem;
+  margin-bottom: 1rem;
 }
 .tecer-pagina-figma section .div-jordan {
   height: 36.25rem;
@@ -206,26 +240,36 @@ footer {
   flex-direction: column;
   flex-wrap: wrap;
   gap: 12.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 5rem;
 }
 footer .primer-footer {
   padding-top: 4.375rem;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-beetwen;
   align-items: center;
-  gap: 0.3125rem;
+  gap: 0rem;
 }
 footer .primer-footer .newsletter {
   width: 28.125rem;
+  font-family: "Work Sans", sans-serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  font-family: "Work Sans", sans-serif;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
 }
 footer .primer-footer .newsletter p {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
+  text-align: center;
 }
 footer .primer-footer div nav ul {
   list-style: none;
@@ -242,7 +286,7 @@ footer .info-final {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  gap: 0.3125rem;
+  gap: 3rem;
 }
 footer .info-final div {
   display: flex;
@@ -252,6 +296,9 @@ footer .info-final div {
   align-items: center;
   gap: 1.25rem;
   margin-bottom: 3.75rem;
+}
+footer .info-final div img {
+  height: 3.375rem;
 }
 
 .footer-catalogue {
@@ -413,7 +460,15 @@ footer .info-final div {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 21.875rem;
+  gap: 8rem;
+}
+.titular-aboutme div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.875rem;
 }
 .titular-aboutme div h1 {
   font-family: "Work Sans", sans-serif;
@@ -422,7 +477,7 @@ footer .info-final div {
   text-align: center;
   color: white;
 }
-.titular-aboutme img {
+.titular-aboutme div img {
   width: auto;
   border-radius: 1.875rem;
   height: 18.75rem;
@@ -613,48 +668,6 @@ footer .info-final div {
 /*-------------------------*/
 /*-------BUTTONS FOOTER: subscribe-------*/
 /*-------------------------*/
-.button-4 {
-  appearance: none;
-  background-color: #FAFBFC;
-  border: 1px solid rgba(27, 31, 35, 0.15);
-  border-radius: 6px;
-  box-shadow: rgba(27, 31, 35, 0.04) 0 1px 0, rgba(255, 255, 255, 0.25) 0 1px 0 inset;
-  box-sizing: border-box;
-  color: #24292E;
-  cursor: pointer;
-  display: inline-block;
-  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  list-style: none;
-  padding: 6px 16px;
-  position: relative;
-  transition: background-color 0.2s cubic-bezier(0.3, 0, 0.5, 1);
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  white-space: nowrap;
-  word-wrap: break-word;
-}
-
-.button-4:hover {
-  background-color: #cfdfff;
-  text-decoration: none;
-  transition-duration: 0.1s;
-}
-
-.button-4:active {
-  background-color: #EDEFF2;
-  box-shadow: rgba(8, 8, 8, 0.2) 0 1px 0 inset;
-  transition: none 0s;
-}
-
-.button-4:focus {
-  outline: 1px transparent;
-}
-
 .custom-button {
   display: inline-block;
   padding: 15px;
@@ -675,6 +688,68 @@ footer .info-final div {
   border-color: white;
 }
 
+.button {
+  padding: 12px 25px 12px 25px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgb(0, 0, 0);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.button:hover {
+  animation: scale-up-bottom 0.9s;
+}
+.button a {
+  text-decoration: none;
+  color: white;
+}
+
+.scale-up-bottom {
+  animation: scale-up-bottom 0.9s;
+}
+
+@keyframes scale-up-bottom {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center bottom;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center bottom;
+  }
+}
+.button-white {
+  padding: 0.75rem 1.5625rem 0.75rem 1.5625rem;
+  border: none;
+  border-radius: 1.5625rem;
+  background-color: rgb(255, 255, 255);
+  font-family: "Work Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.button-white:hover {
+  animation: scale-up-bottom 0.9s;
+}
+.button-white a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.scale-up-bottom {
+  animation: scale-up-bottom 0.9s;
+}
+
+@keyframes scale-up-bottom {
+  0% {
+    transform: scale(0.5);
+    transform-origin: center bottom;
+  }
+  100% {
+    transform: scale(1);
+    transform-origin: center bottom;
+  }
+}
 /*mediaquery*/
 @media (min-width: 1330px) and (max-width: 1600px) {
   .line {
@@ -1525,6 +1600,58 @@ footer .info-final div {
   }
 }
 @media screen and (max-width: 390px) {
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------index----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .first-class div {
+    width: 70%;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+  .first-class section img {
+    height: 200px;
+  }
+  .animacion-fotos {
+    height: 80vh;
+    width: 100%;
+    padding: 0px 30px 0px 30px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+  }
+  .animacion-fotos section {
+    display: flex;
+    height: 26.875rem;
+    width: 37.5rem;
+  }
+  .animacion-fotos section img {
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 0.8;
+    transition: 0.5s ease;
+  }
+  .animacion-fotos section img:hover {
+    cursor: crosshair;
+    width: 18.75rem;
+    opacity: 1;
+    filter: contrast(120%);
+  }
+  .tecer-pagina-figma section {
+    display: flex;
+    flex-direction: column-reverse;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .tecer-pagina-figma section div {
+    align-items: center;
+  }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
