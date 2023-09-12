@@ -61,7 +61,7 @@
     footer{
         background-color: rgb(214, 214, 214);
         gap: 3.125rem ;
-        height: 550px;
+        height: 600px;
         width: 100%;
     }
     
@@ -119,4 +119,20 @@
     .display-images-last{
         flex-direction: column;
     }
+    .sections-books{
+        width: 100%;
+    }
+    .cards-catalogue .portrait-image{
+        height: 18.75rem;
+        width: 18.75rem;
+    }
+    .cards-catalogue .texture-image{
+        height: 18.75rem;
+        width: 18.75rem;
+    }
+    .cards-catalogue .nature-image{
+        height: 18.75rem;
+        width: 18.75rem;
+    }
+
     }

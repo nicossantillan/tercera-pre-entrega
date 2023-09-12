@@ -952,20 +952,28 @@ footer .info-final div img {
     padding-top: 40px;
   }
   .tecer-pagina-figma section {
+    height: 100vh;
     display: flex;
     flex-direction: column-reverse;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     gap: 1.5rem;
+  }
+  .tecer-pagina-figma section {
+    margin-top: 0;
   }
   .tecer-pagina-figma section div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 17.5rem;
-    height: 18.375rem;
+    width: 15.5rem;
+    height: 16.375rem;
     font-family: "Work Sans", sans-serif;
     gap: 15px;
+  }
+  .tecer-pagina-figma section div button {
+    display: none;
   }
   .tercer-pagina-figma section div ul {
     list-style: none;
@@ -995,8 +1003,8 @@ footer .info-final div img {
     gap: 4.375rem;
   }
   .tecer-pagina-figma section .div-jordan {
-    height: 25.25rem;
-    width: 20rem;
+    height: 20.25rem;
+    width: 15rem;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
@@ -1133,6 +1141,9 @@ footer .info-final div img {
   .footer-contact {
     height: 600px;
   }
+  footer .primer-footer {
+    gap: 2rem;
+  }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1178,6 +1189,10 @@ footer .info-final div img {
     width: 23rem;
   }
 }
+.button {
+  font-size: 0.875rem;
+}
+
 @media screen and (max-width: 550px) {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
@@ -1500,8 +1515,8 @@ footer .info-final div img {
     flex-direction: column;
   }
   footer {
-    height: 500px;
-    width: 100%;
+    height: 550px;
+    width: 414px;
   }
   .primer-footer {
     width: 100%;
@@ -1510,7 +1525,59 @@ footer .info-final div img {
     width: 100%;
   }
   .footer-contact {
-    height: 600px;
+    height: 650px;
+  }
+  .main-catalogue {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "item1" "item2" "item3";
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    height: auto;
+    gap: 2rem;
+    padding: 0rem;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .fonts-books {
+    font-size: 2.625rem;
+  }
+  .display-images img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images-last img {
+    height: 150px;
+    width: auto;
+  }
+  .display-images {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    width: 100%;
+  }
+  .display-images.last {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .sections-books {
+    width: 100%;
+  }
+  .cards-grid {
+    justify-content: center;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------index----------------------------------------------------------------------------*/
@@ -1661,8 +1728,9 @@ footer .info-final div img {
   }
   footer {
     background-color: rgb(214, 214, 214);
-    height: 500px;
+    height: 550px;
     gap: 3.125rem;
+    width: 24.375rem;
   }
   .primer-footer {
     gap: 20px;
@@ -1699,6 +1767,12 @@ footer .info-final div img {
   .primer-footer-catalogue {
     gap: 40px;
     flex-direction: column;
+  }
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  /*-------------------------------------------------------books----------------------------------------------------------------------------*/
+  /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
+  .sections-books {
+    width: 100%;
   }
 }
 @media screen and (max-width: 320px) {
@@ -1760,7 +1834,7 @@ footer .info-final div img {
   footer {
     background-color: rgb(214, 214, 214);
     gap: 3.125rem;
-    height: 550px;
+    height: 600px;
     width: 100%;
   }
   .primer-footer {
@@ -1812,6 +1886,21 @@ footer .info-final div img {
   }
   .display-images-last {
     flex-direction: column;
+  }
+  .sections-books {
+    width: 100%;
+  }
+  .cards-catalogue .portrait-image {
+    height: 18.75rem;
+    width: 18.75rem;
+  }
+  .cards-catalogue .texture-image {
+    height: 18.75rem;
+    width: 18.75rem;
+  }
+  .cards-catalogue .nature-image {
+    height: 18.75rem;
+    width: 18.75rem;
   }
 }
 
