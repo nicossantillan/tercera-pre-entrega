@@ -5,7 +5,7 @@
     div{
         @include flex (column, wrap, center, center, 1.875rem);
         h1{
-            font-family: 'Work Sans', sans-serif;
+            font-family: $font-familiy;
             font-size: 3.125rem;
             font-weight: 600;
             text-align: center;
@@ -26,9 +26,9 @@
 
 .cards-aboutme{
     height: 15.625rem;
-    background-color: white;
+    background-color: $background-color-white;
     border-radius: 1.25rem;
-    font-family: 'Work Sans', sans-serif;
+    font-family: $font-familiy;
     color: black;
     text-align: center;
     padding: .625rem;
@@ -47,25 +47,25 @@
 }
 .titular-enorme-aboutme{
     height: 100vh;
-    background-color: white;
-    font-family: 'Work Sans', sans-serif ;
+    background-color: $background-color-white;
+    font-family: $font-familiy;
     font-size: 10.625rem;
     font-weight: 800;
     @include flex (column, wrap, center, center, .1875rem);
 }
 .info-text-aboutme{
-    background-color: white;
+    background-color: $background-color-white;
     height: 50vh;
     @include flex (column, wrap, center, center, .1875rem);
     div{
         h2{
-            font-family: 'Work Sans' , sans-serif;
+            font-family: $font-familiy;
             font-size: 2.5rem;
         }
     } 
 }
 .know-me{
-    font-family: 'Work Sans' , sans-serif ;
+    font-family: $font-familiy ;
     @include flex (column, wrap, center, center, .1875rem);
     h3{
         font-size: 2.5rem;
@@ -76,13 +76,13 @@
     @include flex (row, wrap, space-around, center, 18.75rem);
     div{
         h4{
-            font-family: 'Work Sans' , sans-serif;
+            font-family: $font-familiy;
             font-weight: 400;
             color: grey;
             font-size: .8125rem;
         }   
         p{
-            font-family: 'Work Sans' , sans-serif;
+            font-family: $font-familiy;
             font-weight: 500;
             color: rgb(3, 0, 0);
             font-size: .8125rem;
@@ -97,14 +97,14 @@
     @include flex (column, wrap, center, center, 0);
 }
 .proyect1-aboutme{
-    background-color: white;
+    background-color: $background-color-white;
     height: 100vh;
     width:100%;
     @include flex (row, wrap, center, center, 3.125rem);
     div{
         p{
             width: 34.375rem;
-            font-family: 'Work Sans' , sans-serif;
+            font-family: $font-familiy;
             font-size: .875rem;
             font-weight: 500;
         }
@@ -118,14 +118,12 @@
     }
 }   
 .proyect2-aboutme{
-    background-color: white;
-    height: 100vh;
-    width:100%;
+    @extend .proyect1-aboutme;
     @include flex (row-reverse, wrap, center, center, 3.125rem);
     div{
         p{
             width: 34.375rem;
-            font-family: 'Work Sans' , sans-serif;
+            font-family: $font-familiy;
             font-size: .875rem;
             font-weight: 500;
             text-align: end;

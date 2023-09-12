@@ -80,7 +80,7 @@
     
     
     footer{
-        background-color: rgb(214, 214, 214);
+        background-color: $background-color-white;
         height:550px;
         gap: 3.125rem ;
     }
@@ -139,7 +139,7 @@
     /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     .index-body-background{
-        background-color: rgb(0, 0, 0);
+        background-color: $background-color;
         background-image: url(../assets/img/media-4.jpg);
         width:auto;
         height: 100vh;

@@ -32,7 +32,7 @@
     @include flex (column, wrap, center, center, .1875rem);
 }
 .fonts-books{
-    font-family: 'Work Sans' , sans-serif ;
+    font-family: $font-familiy ;
     font-size: 5.625rem;
     color: rgb(255, 255, 255);
 }
@@ -62,8 +62,7 @@
 }
 
 .line-bottom{
-    width: 85.3127rem;
-    height: .1875rem;
-    background: #530d0a;
+@extend .line;
+    margin-bottom: 0;
     margin-top: 5.3125rem;
 }

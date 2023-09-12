@@ -27,7 +27,7 @@ header div a img {
 }
 header nav ul {
   list-style: none;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-weight: 600;
   display: flex;
   flex-direction: row;
@@ -45,7 +45,7 @@ header nav ul li a:hover {
   color: rgb(0, 0, 0);
   border-radius: 20px;
   padding: 8px 12px 8px 12px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 .header-gradient-aboutme {
@@ -157,7 +157,7 @@ header nav ul li a:hover {
 }
 
 .tecer-pagina-figma {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -175,7 +175,7 @@ header nav ul li a:hover {
 .tecer-pagina-figma section div {
   width: 22.5rem;
   height: 34.375rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -217,7 +217,7 @@ header nav ul li a:hover {
   height: 27.5rem;
   text-align: center;
   color: white;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -258,7 +258,7 @@ footer .primer-footer {
 }
 footer .primer-footer .newsletter {
   width: 28.125rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -302,7 +302,7 @@ footer .info-final div img {
 }
 
 .footer-catalogue {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   padding-bottom: 4.25rem;
   display: flex;
   flex-direction: column;
@@ -356,12 +356,12 @@ footer .info-final div img {
 }
 
 .fonts-books {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 5.625rem;
   color: rgb(255, 255, 255);
 }
 
-.line {
+.line, .line-bottom {
   width: 85.3127rem;
   height: 0.1875rem;
   background: #530d0a;
@@ -388,9 +388,7 @@ footer .info-final div img {
 }
 
 .line-bottom {
-  width: 85.3127rem;
-  height: 0.1875rem;
-  background: #530d0a;
+  margin-bottom: 0;
   margin-top: 5.3125rem;
 }
 
@@ -421,7 +419,7 @@ footer .info-final div img {
   height: 43.75rem;
   width: 20.625rem;
   color: white;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -430,7 +428,7 @@ footer .info-final div img {
   align-items: center;
   gap: 1.875rem;
 }
-.cards-catalogue .portrait-image {
+.cards-catalogue .portrait-image, .cards-catalogue .nature-image, .cards-catalogue .texture-image {
   height: 21.875rem;
   width: 21.875rem;
   background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
@@ -438,18 +436,10 @@ footer .info-final div img {
   background-position: center;
 }
 .cards-catalogue .texture-image {
-  height: 21.875rem;
-  width: 21.875rem;
   background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
-  background-size: cover;
-  background-position: center;
 }
 .cards-catalogue .nature-image {
-  height: 21.875rem;
-  width: 21.875rem;
   background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
-  background-size: cover;
-  background-position: center;
 }
 
 .titular-aboutme {
@@ -471,7 +461,7 @@ footer .info-final div img {
   gap: 1.875rem;
 }
 .titular-aboutme div h1 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 3.125rem;
   font-weight: 600;
   text-align: center;
@@ -495,9 +485,9 @@ footer .info-final div img {
 
 .cards-aboutme {
   height: 15.625rem;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   border-radius: 1.25rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   color: black;
   text-align: center;
   padding: 0.625rem;
@@ -522,8 +512,8 @@ footer .info-final div img {
 
 .titular-enorme-aboutme {
   height: 100vh;
-  background-color: white;
-  font-family: "Work Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
+  font-family: "Work Sans", San-Serif;
   font-size: 10.625rem;
   font-weight: 800;
   display: flex;
@@ -535,7 +525,7 @@ footer .info-final div img {
 }
 
 .info-text-aboutme {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   height: 50vh;
   display: flex;
   flex-direction: column;
@@ -545,12 +535,12 @@ footer .info-final div img {
   gap: 0.1875rem;
 }
 .info-text-aboutme div h2 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 2.5rem;
 }
 
 .know-me {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -572,13 +562,13 @@ footer .info-final div img {
   gap: 18.75rem;
 }
 .personal-info div h4 {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-weight: 400;
   color: grey;
   font-size: 0.8125rem;
 }
 .personal-info div p {
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-weight: 500;
   color: rgb(3, 0, 0);
   font-size: 0.8125rem;
@@ -598,8 +588,8 @@ footer .info-final div img {
   gap: 0;
 }
 
-.proyect1-aboutme {
-  background-color: white;
+.proyect1-aboutme, .proyect2-aboutme {
+  background-color: rgb(255, 255, 255);
   height: 100vh;
   width: 100%;
   display: flex;
@@ -609,17 +599,17 @@ footer .info-final div img {
   align-items: center;
   gap: 3.125rem;
 }
-.proyect1-aboutme div p {
+.proyect1-aboutme div p, .proyect2-aboutme div p {
   width: 34.375rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 0.875rem;
   font-weight: 500;
 }
-.proyect1-aboutme img {
+.proyect1-aboutme img, .proyect2-aboutme img {
   height: 28.125rem;
   width: auto;
 }
-.proyect1-aboutme div {
+.proyect1-aboutme div, .proyect2-aboutme div {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -629,9 +619,6 @@ footer .info-final div img {
 }
 
 .proyect2-aboutme {
-  background-color: white;
-  height: 100vh;
-  width: 100%;
   display: flex;
   flex-direction: row-reverse;
   flex-wrap: wrap;
@@ -641,7 +628,7 @@ footer .info-final div img {
 }
 .proyect2-aboutme div p {
   width: 34.375rem;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 0.875rem;
   font-weight: 500;
   text-align: end;
@@ -693,7 +680,7 @@ footer .info-final div img {
   border: none;
   border-radius: 25px;
   background-color: rgb(0, 0, 0);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -724,7 +711,7 @@ footer .info-final div img {
   border: none;
   border-radius: 1.5625rem;
   background-color: rgb(255, 255, 255);
-  font-family: "Work Sans", sans-serif;
+  font-family: "Work Sans", San-Serif;
   font-size: 1rem;
   font-weight: 600;
 }
@@ -752,7 +739,7 @@ footer .info-final div img {
 }
 /*mediaquery*/
 @media (min-width: 1330px) and (max-width: 1600px) {
-  .line {
+  .line, .line-bottom {
     display: none;
   }
 }
@@ -765,27 +752,28 @@ footer .info-final div img {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    gap: 4.375rem;
     margin-top: 15.625rem;
     margin-bottom: 12.5rem;
-    gap: 4.375rem;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .line {
+  .line, .line-bottom {
     width: 80%;
     height: 0.1875rem;
     background: #530d0a;
     margin-bottom: 5.3125rem;
   }
-  .line.bottom {
+  .line.bottom, .bottom.line-bottom {
     width: 50%;
     height: 0.1875rem;
     background: #530d0a;
     margin-top: 5.3125rem;
   }
   .fonts-books {
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans", San-Serif;
     font-size: 3.625rem;
   }
   .personal-info {
@@ -817,7 +805,7 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .portrait-image {
+  .portrait-image, .cards-catalogue .texture-image, .cards-catalogue .nature-image {
     height: 15.625rem;
     width: 15.625rem;
     background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
@@ -901,7 +889,7 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .portrait-image {
+  .portrait-image, .cards-catalogue .texture-image, .cards-catalogue .nature-image {
     height: 15.625rem;
     width: 15.625rem;
   }
@@ -932,7 +920,7 @@ footer .info-final div img {
     align-items: center;
     max-width: 20.625rem;
     color: white;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans", San-Serif;
     text-align: center;
     gap: 1.875rem;
     max-width: 100%;
@@ -941,7 +929,7 @@ footer .info-final div img {
   /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   .tecer-pagina-figma {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -969,7 +957,7 @@ footer .info-final div img {
     flex-wrap: wrap;
     width: 15.5rem;
     height: 16.375rem;
-    font-family: "Work Sans", sans-serif;
+    font-family: "Work Sans", San-Serif;
     gap: 15px;
   }
   .tecer-pagina-figma section div button {
@@ -1009,7 +997,7 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .line {
+  .line, .line-bottom {
     display: none;
   }
 }
@@ -1055,7 +1043,7 @@ footer .info-final div img {
   .personal-info {
     gap: 3.75rem;
   }
-  .proyect1-aboutme {
+  .proyect1-aboutme, .proyect2-aboutme {
     gap: 3.125rem;
   }
   .proyect2-aboutme {
@@ -1068,7 +1056,7 @@ footer .info-final div img {
   .proyect2-aboutme div p {
     text-align: center;
   }
-  .proyect1-aboutme img {
+  .proyect1-aboutme img, .proyect2-aboutme img {
     height: 37.5rem;
   }
   .proyect2-aboutme img {
@@ -1080,7 +1068,7 @@ footer .info-final div img {
     justify-content: center;
     gap: 0.75rem;
   }
-  .proyect1-aboutme div {
+  .proyect1-aboutme div, .proyect2-aboutme div {
     text-align: center;
     justify-items: center;
     justify-content: center;
@@ -1090,7 +1078,7 @@ footer .info-final div img {
     gap: 100px;
   }
   footer {
-    background-color: rgb(214, 214, 214);
+    background-color: rgb(255, 255, 255);
     height: 550px;
     gap: 3.125rem;
   }
@@ -1210,19 +1198,19 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  .proyect1-aboutme div {
+  .proyect1-aboutme div, .proyect2-aboutme div {
     width: 100%;
   }
   .proyect2-aboutme div {
     width: 100%;
   }
-  .proyect1-aboutme div button {
+  .proyect1-aboutme div button, .proyect2-aboutme div button {
     width: 50%;
   }
   .proyect2-aboutme div button {
     width: 50%;
   }
-  .proyect1-aboutme div p {
+  .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 350px;
     font-weight: 500;
   }
@@ -1340,19 +1328,19 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  .proyect1-aboutme div {
+  .proyect1-aboutme div, .proyect2-aboutme div {
     width: 100%;
   }
   .proyect2-aboutme div {
     width: 100%;
   }
-  .proyect1-aboutme div button {
+  .proyect1-aboutme div button, .proyect2-aboutme div button {
     width: 50%;
   }
   .proyect2-aboutme div button {
     width: 50%;
   }
-  .proyect1-aboutme div p {
+  .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 350px;
     font-weight: 500;
   }
@@ -1484,7 +1472,7 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  .proyect1-aboutme div p {
+  .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 350px;
     font-weight: 500;
   }
@@ -1495,13 +1483,13 @@ footer .info-final div img {
   .titular-aboutme {
     padding-top: 5.375rem;
   }
-  .proyect1-aboutme {
+  .proyect1-aboutme, .proyect2-aboutme {
     gap: 2.125rem;
   }
   .proyect2-aboutme {
     gap: 2.125rem;
   }
-  .proyect1-aboutme img {
+  .proyect1-aboutme img, .proyect2-aboutme img {
     height: 27.5rem;
   }
   .proyect2-aboutme img {
@@ -1682,7 +1670,7 @@ footer .info-final div img {
     height: 80vh;
     width: 100%;
     padding: 0px 30px 0px 30px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -1792,13 +1780,13 @@ footer .info-final div img {
     width: 100%;
     text-align: center;
   }
-  .proyect1-aboutme img {
+  .proyect1-aboutme img, .proyect2-aboutme img {
     height: 17.5rem;
   }
   .proyect2-aboutme img {
     height: 17.5rem;
   }
-  .proyect1-aboutme div p {
+  .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 100%;
     font-weight: 500;
     font-size: 12px;
@@ -1890,7 +1878,7 @@ footer .info-final div img {
   .sections-books {
     width: 100%;
   }
-  .cards-catalogue .portrait-image {
+  .cards-catalogue .portrait-image, .cards-catalogue .texture-image, .cards-catalogue .nature-image {
     height: 18.75rem;
     width: 18.75rem;
   }

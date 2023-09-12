@@ -1,5 +1,5 @@
 footer{
-    background-color: rgb(255, 255, 255);
+    background-color: $background-color-white;
     height:34.375rem;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@ footer{
         @include flex (row, wrap, space-beetwen, center, 0rem);
         .newsletter{
             width: 28.125rem;
-            font-family: 'Work Sans', sans-serif;
+            font-family: $font-familiy;
             @include flex (column, wrap, center, center, 2rem);
             p{
                 font-family: 'Inter', sans-serif;
@@ -41,7 +41,7 @@ footer{
     }
 }
 .footer-catalogue{
-    background-color: white;
+    background-color: $background-color-white;
     padding-bottom: 4.25rem;
     display: flex;
     flex-direction: column;
