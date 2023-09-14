@@ -5,6 +5,7 @@
     header {
         flex-direction: column;
         align-items: center;
+        width: 100%;
     }
     
     header div img {
@@ -62,7 +63,7 @@
     }
     footer{
         height: 550px;
-        width: 414px;
+        width: 100%;
     }
     .primer-footer{
         width: 100%;
@@ -130,6 +131,13 @@
         }
         .cards-grid{
             justify-content: center;
+        }
+        .grid-container {
+            height: auto;
+            width: 100%;
+            @include grid (repeat(1,100%), auto 34.375rem,
+        "item1"
+        "item2")
         }
 
 

@@ -6,6 +6,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  border: 1px solid green;
 }
 
 body {
@@ -1645,6 +1646,7 @@ footer .info-final div img {
   header {
     flex-direction: column;
     align-items: center;
+    width: 100%;
   }
   header div img {
     width: 8rem;
@@ -1701,7 +1703,7 @@ footer .info-final div img {
   }
   footer {
     height: 550px;
-    width: 414px;
+    width: 100%;
   }
   .primer-footer {
     width: 100%;
@@ -1775,6 +1777,14 @@ footer .info-final div img {
   }
   .cards-grid {
     justify-content: center;
+  }
+  .grid-container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+    grid-template-rows: auto 34.375rem;
+    grid-template-areas: "item1" "item2";
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------index----------------------------------------------------------------------------*/
