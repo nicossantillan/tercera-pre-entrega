@@ -46,6 +46,7 @@
         gap:3.125rem;
     }   
     .proyect2-aboutme{
+        background-color: white;
         height: 100vh;;
         display: flex;
         gap: 10px;
@@ -55,11 +56,16 @@
     .proyect2-aboutme div p{
         text-align: center;
     }
+    .proyect2-aboutme div{
+    padding-bottom: 1.875rem;
+    background-color: white;
+    }
     .proyect1-aboutme img{
-        height: 37.5rem;
+        height: 27.5rem;
     }
     .proyect2-aboutme img{
-        height: 37.5rem;
+        height: 27.5rem;
+        width: 15rem;
     }
     .proyect2-aboutme div{
         text-align: center;

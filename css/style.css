@@ -986,6 +986,12 @@ footer .info-final div img {
     height: 18rem;
     width: 18rem;
   }
+  .proyect2-aboutme div {
+    padding-bottom: 1.875rem;
+    background-color: white;
+    gap: 2rem;
+    width: 600px;
+  }
 }
 @media screen and (max-width: 1024px) {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1059,6 +1065,16 @@ footer .info-final div img {
     text-align: center;
     gap: 1.875rem;
     max-width: 100%;
+  }
+  .proyect2-aboutme div {
+    padding-bottom: 1.875rem;
+    background-color: white;
+    gap: 2rem;
+  }
+  .proyect1-aboutme div, .proyect2-aboutme div {
+    padding-bottom: 1.875rem;
+    background-color: white;
+    gap: 2rem;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
@@ -1182,6 +1198,7 @@ footer .info-final div img {
     gap: 3.125rem;
   }
   .proyect2-aboutme {
+    background-color: white;
     height: 100vh;
     display: flex;
     gap: 10px;
@@ -1191,11 +1208,16 @@ footer .info-final div img {
   .proyect2-aboutme div p {
     text-align: center;
   }
+  .proyect2-aboutme div {
+    padding-bottom: 1.875rem;
+    background-color: white;
+  }
   .proyect1-aboutme img, .proyect2-aboutme img {
-    height: 37.5rem;
+    height: 27.5rem;
   }
   .proyect2-aboutme img {
-    height: 37.5rem;
+    height: 27.5rem;
+    width: 15rem;
   }
   .proyect2-aboutme div {
     text-align: center;
@@ -1904,7 +1926,7 @@ footer .info-final div img {
     background-color: rgb(214, 214, 214);
     height: 550px;
     gap: 3.125rem;
-    width: 24.375rem;
+    width: 100%;
   }
   .primer-footer {
     gap: 20px;
@@ -1934,6 +1956,9 @@ footer .info-final div img {
   .titular-enorme-aboutme {
     font-size: 2.625rem;
     height: 50vh;
+  }
+  .midway {
+    font-size: 40px;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
