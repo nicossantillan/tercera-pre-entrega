@@ -20,31 +20,10 @@
 
 }
 .container-cards{
-    @include flex (row, wrap, center, center, 18.75rem);
+    @include flex (row, wrap, center, center, 10rem);
     margin-bottom: 3.125rem;
 }   
 
-.cards-aboutme{
-    height: 15.625rem;
-    background-color: $background-color-white;
-    border-radius: 1.25rem;
-    font-family: $font-familiy;
-    color: black;
-    text-align: center;
-    padding: .625rem;
-    width:10rem;
-    @include flex (column, wrap, center, center, .1875rem);
-    img{
-        height: 1.875rem;
-        width: auto;
-    }
-    h2{
-        font-size: 1.25rem;
-    }
-    p{
-        font-size: .875rem;
-    }
-}
 .titular-enorme-aboutme{
     height: 100vh;
     background-color: $background-color-white;

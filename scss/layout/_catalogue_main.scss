@@ -29,11 +29,17 @@
         background-position: center;
     }
     .texture-image {
-        @extend .portrait-image;
+        height: 21.875rem;
+        width: 21.875rem;
         background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
+        background-size: cover;
+        background-position: center;
     }
     .nature-image {
-        @extend .portrait-image;
+        height: 21.875rem;
+        width: 21.875rem;
         background-image: url(https://images.unsplash.com/photo-1606573324666-b74801da38b7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80);
+        background-size: cover;
+        background-position: center;
     }
 }

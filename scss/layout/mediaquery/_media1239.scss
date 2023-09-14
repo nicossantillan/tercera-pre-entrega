@@ -17,19 +17,30 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .portrait-image {
-        height: 15.625rem;
-        width: 15.625rem;
-        background-image: url(https://images.unsplash.com/photo-1564109799258-6b7c25cd1c92?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1365&q=80);
-        background-size: cover;
-        background-position: center;
+    .cards-catalogue .nature-image{
+        height: 20rem;
+        width: 20rem;
     }
+    .cards-catalogue .texture-image{
+        height: 20rem;
+        width: 20rem;
+    }
+    .cards-catalogue .portrait-image{
+        height: 20rem;
+        width: 20rem;
+    }
+    .cards-catalogue .portrait-image{
+        height: 20rem;
+        width: 20rem;
+    }
+    
     .texture-image {
         height: 15.625rem;
         width: 15.625rem;
         background-image: url(https://images.unsplash.com/photo-1583407723467-9b2d22504831?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=435&q=80);
         background-size: cover;
         background-position: center;
+        
     }
     .nature-image {
         height: 15.625rem;
@@ -38,6 +49,8 @@
         background-size: cover;
         background-position: center;
     }
+
+
     .cards-catalogue{
         font-size: 14px;
     }
