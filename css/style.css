@@ -1199,7 +1199,7 @@ footer .info-final div img {
   }
   .proyect2-aboutme {
     background-color: white;
-    height: 100vh;
+    height: 62.5rem;
     display: flex;
     gap: 10px;
     padding-top: 3.75rem;
@@ -1288,6 +1288,8 @@ footer .info-final div img {
   }
   footer .primer-footer {
     gap: 2rem;
+    justify-content: center;
+    padding-top: 0;
   }
   .cards-catalogue .nature-image {
     height: 16rem;
@@ -1389,7 +1391,7 @@ footer .info-final div img {
   }
   footer {
     background-color: rgb(214, 214, 214);
-    height: 550px;
+    height: 34.375rem;
     gap: 3.125rem;
   }
   .primer-footer {
@@ -1532,7 +1534,7 @@ footer .info-final div img {
   }
   footer {
     background-color: rgb(214, 214, 214);
-    height: 550px;
+    height: 34.375rem;
     gap: 3.125rem;
   }
   .primer-footer {

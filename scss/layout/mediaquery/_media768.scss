@@ -47,7 +47,7 @@
     }   
     .proyect2-aboutme{
         background-color: white;
-        height: 100vh;;
+        height: 62.5rem;;
         display: flex;
         gap: 10px;
         padding-top:3.75rem;
@@ -140,6 +140,8 @@
     }
     footer .primer-footer{
         gap:2rem;
+        justify-content: center;
+        padding-top:0;
     }
     .cards-catalogue .nature-image{
         height: 16rem;
