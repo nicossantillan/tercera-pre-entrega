@@ -8,8 +8,12 @@
         width: 100%;
     }
     
-    header div img {
-        width: 8rem;
+    header {
+        div {
+            img {
+                width: 8rem;
+            }
+        }
     }
     
             .navbar {
@@ -17,12 +21,12 @@
             align-items: center;
         gap: 1rem;
     }
-    .titular-aboutme div h1{
-        font-size: 2.125rem;;
-    }
-    .titular-enorme-aboutme{
-        font-size: 2.625rem;
-        height:60vh;
+    .titular-aboutme {
+        div {
+            h1{
+            font-size: 2.125rem;;
+            }
+        }
     }
     .personal-info {
         gap: .75rem;
@@ -32,13 +36,21 @@
         width: 350px;
         text-align: center;
     }
-    .proyect1-aboutme div p{
-        width: 350px;
-        font-weight: 500;
+    .proyect1-aboutme {
+        div {
+            p{
+                width: 350px;
+                font-weight: 500;
+            }
+        }
     }
-    .proyect2-aboutme div p{
-        width: 350px;
-        text-align: center;
+    .proyect2-aboutme {
+        div {
+            p{
+                width: 350px;
+                text-align: center;
+            }
+        }
     }
     .titular-aboutme{
         padding-top: 5.375rem;}
@@ -48,27 +60,26 @@
     .proyect2-aboutme{
         gap:2.125rem;
         } 
-    .proyect1-aboutme img{
+    .proyect1-aboutme {
+        img{
         height: 27.5rem;
         }
-        .proyect2-aboutme img{
+    }
+        .proyect2-aboutme {
+            img{
         height: 27.5rem;
         }
+    }
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-    .primer-footer-catalogue{
-        gap:40px;
-        flex-direction:column ;
-    }
     footer{
-        height: 550px;
         width: 100%;
     }
-    .primer-footer{
+    .first-footer{
         width: 100%;
     }
-    .primer-footer .newsletter{
+    .first-footer .newsletter{
         width: 100%;
     }
     .footer-contact{
@@ -90,41 +101,15 @@
         gap: 2rem;
         padding: 0rem;
     }
-
-    .cards-catalogue .nature-image{
-        height: 15rem;
-        width: 15rem;
-    }
-    .cards-catalogue .texture-image{
-        height: 15rem;
-        width: 15rem;
-    }
-    .cards-catalogue .portrait-image{
-        height: 15rem;
-        width: 15rem;
-    }
 /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------books----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-    .fonts-books{
-        font-size: 2.625rem;
-    }
-    .display-images img{
-    height: 150px;
-    width: auto;
-    }
-    .display-images-last img{
-        height: 150px;
-        width: auto;
-        }
         .display-images{
             @include flex(row, wrap, center, center, .3125rem);
             width: 100%;
         }
-        .display-images.last{
+        .display-images-last{
             @include flex(row, wrap, center, center, .3125rem);
-            width: 100%;
-            margin-bottom: 1.5rem;
         }
         .sections-books{
             width: 100%;
@@ -144,24 +129,6 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------index----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-    .index-body-background{
-        background-color: $background-color;
-        background-image: url(../assets/img/media-4.jpg);
-        width:auto;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-    .welcome {
-        width: 21.875rem;
-        font-family: 'Anonymous Pro', monospace;
-        color:white; 
-        font-size: 16px;
-        text-align: center;
-        display:flex; 
-        justify-content: center;
-    }
     .first-class{
         display: flex;
         flex-direction: column;
@@ -172,12 +139,18 @@
         margin-right: 0;
         margin-top: 7.5rem;
     }
-    .first-class section div p{
-        font-size: 1rem;
-    }
-    .first-class section img{
-        height: 300px;
-        width: auto;
+    .first-class {
+        section{
+            div{
+                p{
+                    font-size: 1rem;
+                }
+            }
+            img{
+                height: 300px;
+                width: auto;
+            }
+        }
     }
     .section-landing{
         display: flex;
@@ -185,47 +158,51 @@
         gap: 1.875rem;
     }
     
-    .section-landing div{
-        width:12.5rem;
-        font-family: 'Anonymous Pro', monospace;
-        color:white; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: end;
-        gap:1rem;
-    }
-    .section-landing img{
-        height: 14.375rem;
-        width: auto;
-    }
-    .gallery-images1 img{
+    .gallery-images1 {
+        img{
     height: 250px;
     width: auto;
     }
+}
     
-        .section-gallery div img{
+        .section-gallery {
+            div {
+                img{
             height: auto;
             width: 250px;
         }
-        .images-column li img{
+    }
+}
+        .images-column {
+            li {
+                img{
             height: 3.5rem;
             width: 4rem;
             border: .0625rem solid rgba(0, 0, 0, 0.432);
         }
-        .tecer-pagina-figma{
-            gap:20px;
+    }
+}
+    .third-page {
+        gap: 1.25rem;
+        div {
+            ul {
+                li {
+                    img{
+                        display: none;
+                    }
+                }
+            }
         }
-        .tecer-pagina-figma div ul li img{
-display: none;
-        }
+    }
         .div-jordan{
             height: 30rem;
             width: 21rem;
         }    
-        .about-collection p{
+        .about-collection {
+            p{
             font-size: 12px;
         }
+    }
         .display-images-last{
             margin-bottom: 1.5rem;
             gap: .625rem;

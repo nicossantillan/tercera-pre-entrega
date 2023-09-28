@@ -50,7 +50,7 @@
     flex-direction: column;
     gap: 4.375rem;
 }
-.animacion-fotos{
+.animation-photos{
     height: 80vh;
     width: 100%;
     background-color: white;
@@ -74,7 +74,7 @@
         }
     }
 }
-.tecer-pagina-figma{
+.third-page{
     background-color: $background-color-white;
     @include flex (row, wrap, space-around, center, .3125rem);
     section{

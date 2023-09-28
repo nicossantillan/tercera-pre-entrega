@@ -126,7 +126,7 @@ header nav ul li a:hover {
   gap: 4.375rem;
 }
 
-.animacion-fotos {
+.animation-photos {
   height: 80vh;
   width: 100%;
   background-color: white;
@@ -137,26 +137,26 @@ header nav ul li a:hover {
   align-items: center;
   gap: 0;
 }
-.animacion-fotos section {
+.animation-photos section {
   display: flex;
   height: 26.875rem;
   width: 37.5rem;
 }
-.animacion-fotos section img {
+.animation-photos section img {
   width: 0;
   flex-grow: 1;
   object-fit: cover;
   opacity: 0.8;
   transition: 0.5s ease;
 }
-.animacion-fotos section img:hover {
+.animation-photos section img:hover {
   cursor: crosshair;
   width: 18.75rem;
   opacity: 1;
   filter: contrast(120%);
 }
 
-.tecer-pagina-figma {
+.third-page {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: row;
@@ -165,14 +165,14 @@ header nav ul li a:hover {
   align-items: center;
   gap: 0.3125rem;
 }
-.tecer-pagina-figma section {
+.third-page section {
   display: flex;
   flex-direction: row;
   height: 100vh;
   align-items: center;
   gap: 2.5rem;
 }
-.tecer-pagina-figma section div {
+.third-page section div {
   width: 22.5rem;
   height: 34.375rem;
   font-family: "Work Sans", San-Serif;
@@ -183,20 +183,20 @@ header nav ul li a:hover {
   align-items: center;
   gap: 0.3125rem;
 }
-.tecer-pagina-figma section div h3 {
+.third-page section div h3 {
   margin-top: 0.9375rem;
   font-size: 0.8125rem;
 }
-.tecer-pagina-figma section div h2 {
+.third-page section div h2 {
   font-size: 1.9375rem;
 }
-.tecer-pagina-figma section div p {
+.third-page section div p {
   font-size: 0.875rem;
   text-align: justify;
   margin-top: 1.125rem;
   margin-bottom: 1rem;
 }
-.tecer-pagina-figma section .div-jordan {
+.third-page section .div-jordan {
   height: 36.25rem;
   width: 28.75rem;
   background-image: url(https://images.unsplash.com/photo-1520930528075-4ea5ead759f5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80);
@@ -204,10 +204,10 @@ header nav ul li a:hover {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.tecer-pagina-figma div ul {
+.third-page div ul {
   list-style: none;
 }
-.tecer-pagina-figma div ul li img {
+.third-page div ul li img {
   height: 7.5rem;
   width: 10.625rem;
   border: 0.0625rem solid rgba(0, 0, 0, 0.432);
@@ -247,7 +247,7 @@ footer {
   align-items: center;
   gap: 5rem;
 }
-footer .primer-footer {
+footer .first-footer {
   padding-top: 4.375rem;
   display: flex;
   flex-direction: row;
@@ -256,7 +256,7 @@ footer .primer-footer {
   align-items: center;
   gap: 0rem;
 }
-footer .primer-footer .newsletter {
+footer .first-footer .newsletter {
   width: 28.125rem;
   font-family: "Work Sans", San-Serif;
   display: flex;
@@ -266,12 +266,12 @@ footer .primer-footer .newsletter {
   align-items: center;
   gap: 2rem;
 }
-footer .primer-footer .newsletter p {
+footer .first-footer .newsletter p {
   font-family: "Inter", sans-serif;
   font-size: 0.75rem;
   text-align: center;
 }
-footer .primer-footer div nav ul {
+footer .first-footer div nav ul {
   list-style: none;
   display: flex;
   flex-direction: row;
@@ -974,18 +974,6 @@ footer .info-final div img {
   .display-images-last {
     gap: 30px;
   }
-  .cards-catalogue .nature-image {
-    height: 18rem;
-    width: 18rem;
-  }
-  .cards-catalogue .texture-image {
-    height: 18rem;
-    width: 18rem;
-  }
-  .cards-catalogue .portrait-image {
-    height: 18rem;
-    width: 18rem;
-  }
   .proyect2-aboutme div {
     padding-bottom: 1.875rem;
     background-color: white;
@@ -1079,7 +1067,7 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .tecer-pagina-figma {
+  .third-page {
     background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
@@ -1090,7 +1078,8 @@ footer .info-final div img {
     height: 100vh;
     padding-top: 40px;
   }
-  .tecer-pagina-figma section {
+  .third-page section {
+    margin-top: 0;
     height: 100vh;
     display: flex;
     flex-direction: column-reverse;
@@ -1099,10 +1088,7 @@ footer .info-final div img {
     align-items: center;
     gap: 1.5rem;
   }
-  .tecer-pagina-figma section {
-    margin-top: 0;
-  }
-  .tecer-pagina-figma section div {
+  .third-page section div {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -1111,21 +1097,18 @@ footer .info-final div img {
     font-family: "Work Sans", San-Serif;
     gap: 15px;
   }
-  .tecer-pagina-figma section div button {
-    display: none;
-  }
-  .tercer-pagina-figma section div ul {
+  .third-page section div ul {
     list-style: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     width: 100%;
     gap: 10px;
   }
-  .tecer-pagina-figma div ul li img {
+  .third-page section div ul li img {
     height: 5.5rem;
     width: 7.625rem;
     border: 0.0625rem solid rgba(0, 0, 0, 0.432);
+  }
+  .third-page section div button {
+    display: none;
   }
   .section-gallery {
     display: flex;
@@ -1141,7 +1124,7 @@ footer .info-final div img {
     flex-direction: column;
     gap: 4.375rem;
   }
-  .tecer-pagina-figma section .div-jordan {
+  .third-page section .div-jordan {
     height: 20.25rem;
     width: 15rem;
   }
@@ -1151,19 +1134,18 @@ footer .info-final div img {
   .line, .line-bottom {
     display: none;
   }
+  .footer-catalogue {
+    height: 40rem;
+  }
 }
 @media screen and (max-width: 768px) {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   header {
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
   }
   .navbar {
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
   }
   .titular-aboutme img {
@@ -1176,13 +1158,7 @@ footer .info-final div img {
     width: 100%;
   }
   .container-cards {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     gap: 9.375rem;
-    margin-bottom: 3.125rem;
   }
   .info-text-aboutme {
     height: 90vh;
@@ -1191,11 +1167,17 @@ footer .info-final div img {
     font-size: 3.625rem;
     height: 50vh;
   }
-  .personal-info {
-    gap: 3.75rem;
-  }
   .proyect1-aboutme, .proyect2-aboutme {
     gap: 3.125rem;
+  }
+  .proyect1-aboutme div, .proyect2-aboutme div {
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+  }
+  .proyect1-aboutme img, .proyect2-aboutme img {
+    height: 27.5rem;
   }
   .proyect2-aboutme {
     background-color: white;
@@ -1205,31 +1187,20 @@ footer .info-final div img {
     padding-top: 3.75rem;
     padding-bottom: 3.75rem;
   }
-  .proyect2-aboutme div p {
-    text-align: center;
-  }
   .proyect2-aboutme div {
     padding-bottom: 1.875rem;
     background-color: white;
+    text-align: center;
+    justify-items: center;
+    justify-content: center;
+    gap: 0.75rem;
   }
-  .proyect1-aboutme img, .proyect2-aboutme img {
-    height: 27.5rem;
+  .proyect2-aboutme div p {
+    text-align: center;
   }
   .proyect2-aboutme img {
     height: 27.5rem;
     width: 15rem;
-  }
-  .proyect2-aboutme div {
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-  }
-  .proyect1-aboutme div, .proyect2-aboutme div {
-    text-align: center;
-    justify-items: center;
-    justify-content: center;
-    gap: 0.75rem;
   }
   .titular-aboutme {
     gap: 100px;
@@ -1239,7 +1210,7 @@ footer .info-final div img {
     height: 550px;
     gap: 3.125rem;
   }
-  .primer-footer {
+  .first-footer {
     gap: 20px;
     flex-direction: column;
   }
@@ -1257,12 +1228,12 @@ footer .info-final div img {
     gap: 1.25rem;
     margin-bottom: 0.625rem;
   }
+  .info-final div h4 {
+    font-size: 8px;
+  }
   .info-final div img {
     height: 30px;
     width: auto;
-  }
-  .info-final div h4 {
-    font-size: 8px;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
@@ -1286,7 +1257,7 @@ footer .info-final div img {
   .footer-contact {
     height: 600px;
   }
-  footer .primer-footer {
+  footer .first-footer {
     gap: 2rem;
     justify-content: center;
     padding-top: 0;
@@ -1334,14 +1305,14 @@ footer .info-final div img {
     width: 6rem;
     border: 0.0625rem solid rgba(0, 0, 0, 0.432);
   }
-  .tercer-pagina-figma section div ul {
+  .third-page {
+    gap: 20px;
+  }
+  .third-page section div ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-  }
-  .tecer-pagina-figma {
-    gap: 20px;
   }
   .div-jordan {
     height: 32rem;
@@ -1369,17 +1340,17 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  .proyect1-aboutme div, .proyect2-aboutme div {
-    width: 100%;
+  .proyect1-aboutme div button, .proyect2-aboutme div button {
+    width: 50%;
   }
   .proyect2-aboutme div {
     width: 100%;
   }
-  .proyect1-aboutme div button, .proyect2-aboutme div button {
-    width: 50%;
-  }
   .proyect2-aboutme div button {
     width: 50%;
+  }
+  .proyect1-aboutme div, .proyect2-aboutme div {
+    width: 100%;
   }
   .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 350px;
@@ -1389,46 +1360,9 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  footer {
-    background-color: rgb(214, 214, 214);
-    height: 34.375rem;
-    gap: 3.125rem;
-  }
-  .primer-footer {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .social-media li a img {
-    height: 17px;
-  }
-  .newsletter {
-    width: 18.75rem;
-    gap: 1.25rem;
-  }
-  .newsletter p {
-    font-size: 10px;
-  }
-  .info-final div {
-    gap: 1.25rem;
-    margin-bottom: 0.625rem;
-  }
-  .info-final div img {
-    height: 30px;
-    width: auto;
-  }
-  .info-final div h4 {
-    font-size: 8px;
-  }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .primer-footer-catalogue {
-    gap: 40px;
-    flex-direction: column;
-  }
-  .footer-contact {
-    height: 600px;
-  }
   .cards-catalogue .portrait-image {
     height: 15rem;
     width: 15rem;
@@ -1444,15 +1378,6 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------index----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .index-body-background {
-    background-color: rgb(0, 0, 0);
-    background-image: url(../assets/img/media-4.jpg);
-    width: auto;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
   .welcome {
     width: 21.875rem;
     font-family: "Anonymous Pro", monospace;
@@ -1461,20 +1386,6 @@ footer .info-final div img {
     text-align: center;
     display: flex;
     justify-content: center;
-  }
-  .section-landing div {
-    width: 12.5rem;
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: end;
-    gap: 1rem;
-  }
-  .section-landing img {
-    height: 14.375rem;
-    width: auto;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
@@ -1512,17 +1423,17 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  .proyect1-aboutme div, .proyect2-aboutme div {
-    width: 100%;
+  .proyect1-aboutme div button, .proyect2-aboutme div button {
+    width: 50%;
   }
   .proyect2-aboutme div {
     width: 100%;
   }
-  .proyect1-aboutme div button, .proyect2-aboutme div button {
-    width: 50%;
-  }
   .proyect2-aboutme div button {
     width: 50%;
+  }
+  .proyect1-aboutme div, .proyect2-aboutme div {
+    width: 100%;
   }
   .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 350px;
@@ -1532,46 +1443,9 @@ footer .info-final div img {
     width: 350px;
     text-align: center;
   }
-  footer {
-    background-color: rgb(214, 214, 214);
-    height: 34.375rem;
-    gap: 3.125rem;
-  }
-  .primer-footer {
-    gap: 20px;
-    flex-direction: column;
-  }
-  .social-media li a img {
-    height: 17px;
-  }
-  .newsletter {
-    width: 18.75rem;
-    gap: 1.25rem;
-  }
-  .newsletter p {
-    font-size: 10px;
-  }
-  .info-final div {
-    gap: 1.25rem;
-    margin-bottom: 0.625rem;
-  }
-  .info-final div img {
-    height: 30px;
-    width: auto;
-  }
-  .info-final div h4 {
-    font-size: 8px;
-  }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .primer-footer-catalogue {
-    gap: 40px;
-    flex-direction: column;
-  }
-  .footer-contact {
-    height: 600px;
-  }
   .cards-catalogue .portrait-image {
     height: 15rem;
     width: 15rem;
@@ -1587,15 +1461,6 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------index----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .index-body-background {
-    background-color: rgb(0, 0, 0);
-    background-image: url(../assets/img/media-4.jpg);
-    width: auto;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
   .welcome {
     width: 21.875rem;
     font-family: "Anonymous Pro", monospace;
@@ -1604,20 +1469,6 @@ footer .info-final div img {
     text-align: center;
     display: flex;
     justify-content: center;
-  }
-  .section-landing div {
-    width: 12.5rem;
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: end;
-    gap: 1rem;
-  }
-  .section-landing img {
-    height: 14.375rem;
-    width: auto;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
@@ -1658,10 +1509,6 @@ footer .info-final div img {
   .titular-aboutme div h1 {
     font-size: 2.125rem;
   }
-  .titular-enorme-aboutme {
-    font-size: 2.625rem;
-    height: 60vh;
-  }
   .personal-info {
     gap: 0.75rem;
   }
@@ -1696,18 +1543,13 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .primer-footer-catalogue {
-    gap: 40px;
-    flex-direction: column;
-  }
   footer {
-    height: 550px;
     width: 100%;
   }
-  .primer-footer {
+  .first-footer {
     width: 100%;
   }
-  .primer-footer .newsletter {
+  .first-footer .newsletter {
     width: 100%;
   }
   .footer-contact {
@@ -1726,32 +1568,9 @@ footer .info-final div img {
     gap: 2rem;
     padding: 0rem;
   }
-  .cards-catalogue .nature-image {
-    height: 15rem;
-    width: 15rem;
-  }
-  .cards-catalogue .texture-image {
-    height: 15rem;
-    width: 15rem;
-  }
-  .cards-catalogue .portrait-image {
-    height: 15rem;
-    width: 15rem;
-  }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------books----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .fonts-books {
-    font-size: 2.625rem;
-  }
-  .display-images img {
-    height: 150px;
-    width: auto;
-  }
-  .display-images-last img {
-    height: 150px;
-    width: auto;
-  }
   .display-images {
     display: flex;
     flex-direction: row;
@@ -1761,15 +1580,13 @@ footer .info-final div img {
     gap: 0.3125rem;
     width: 100%;
   }
-  .display-images.last {
+  .display-images-last {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 0.3125rem;
-    width: 100%;
-    margin-bottom: 1.5rem;
   }
   .sections-books {
     width: 100%;
@@ -1788,24 +1605,6 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------index----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .index-body-background {
-    background-color: rgb(0, 0, 0);
-    background-image: url(../assets/img/media-4.jpg);
-    width: auto;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-  }
-  .welcome {
-    width: 21.875rem;
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-  }
   .first-class {
     display: flex;
     flex-direction: column;
@@ -1828,20 +1627,6 @@ footer .info-final div img {
     flex-direction: row-reverse;
     gap: 1.875rem;
   }
-  .section-landing div {
-    width: 12.5rem;
-    font-family: "Anonymous Pro", monospace;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: end;
-    gap: 1rem;
-  }
-  .section-landing img {
-    height: 14.375rem;
-    width: auto;
-  }
   .gallery-images1 img {
     height: 250px;
     width: auto;
@@ -1855,10 +1640,10 @@ footer .info-final div img {
     width: 4rem;
     border: 0.0625rem solid rgba(0, 0, 0, 0.432);
   }
-  .tecer-pagina-figma {
-    gap: 20px;
+  .third-page {
+    gap: 1.25rem;
   }
-  .tecer-pagina-figma div ul li img {
+  .third-page div ul li img {
     display: none;
   }
   .div-jordan {
@@ -1885,37 +1670,7 @@ footer .info-final div img {
   .first-class section img {
     height: 200px;
   }
-  .animacion-fotos {
-    height: 80vh;
-    width: 100%;
-    padding: 0px 30px 0px 30px;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-  }
-  .animacion-fotos section {
-    display: flex;
-    height: 26.875rem;
-    width: 37.5rem;
-  }
-  .animacion-fotos section img {
-    width: 0;
-    flex-grow: 1;
-    object-fit: cover;
-    opacity: 0.8;
-    transition: 0.5s ease;
-  }
-  .animacion-fotos section img:hover {
-    cursor: crosshair;
-    width: 18.75rem;
-    opacity: 1;
-    filter: contrast(120%);
-  }
-  .tecer-pagina-figma section {
+  .third-page section {
     display: flex;
     flex-direction: column-reverse;
     height: 100vh;
@@ -1923,7 +1678,7 @@ footer .info-final div img {
     justify-content: center;
     gap: 1rem;
   }
-  .tecer-pagina-figma section div {
+  .third-page section div {
     align-items: center;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -1939,7 +1694,7 @@ footer .info-final div img {
     gap: 3.125rem;
     width: 100%;
   }
-  .primer-footer {
+  .first-footer {
     gap: 20px;
     width: 100%;
   }
@@ -2005,10 +1760,6 @@ footer .info-final div img {
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-  .titular-aboutme img {
-    height: 200px;
-    width: auto;
-  }
   .titular-enorme-aboutme {
     font-size: 1.625rem;
     height: 40vh;
@@ -2021,13 +1772,13 @@ footer .info-final div img {
   .proyect1-aboutme img, .proyect2-aboutme img {
     height: 17.5rem;
   }
-  .proyect2-aboutme img {
-    height: 17.5rem;
-  }
   .proyect1-aboutme div p, .proyect2-aboutme div p {
     width: 100%;
     font-weight: 500;
     font-size: 12px;
+  }
+  .proyect2-aboutme img {
+    height: 17.5rem;
   }
   .proyect2-aboutme div p {
     width: 100%;
@@ -2042,14 +1793,14 @@ footer .info-final div img {
   .info-text-aboutme h3 {
     font-size: 20px;
   }
+  .info-text-aboutme div {
+    width: 90%;
+  }
   .info-text-aboutme div h2 {
     font-size: 20px;
   }
   .info-text-aboutme div p {
     font-size: 14px;
-  }
-  .info-text-aboutme div {
-    width: 90%;
   }
   .personal-info div h4 {
     font-size: 12px;
@@ -2063,7 +1814,7 @@ footer .info-final div img {
     height: 600px;
     width: 100%;
   }
-  .primer-footer {
+  .first-footer {
     gap: 20px;
   }
   .social-media li a img {
@@ -2080,12 +1831,12 @@ footer .info-final div img {
     gap: 1.25rem;
     margin-bottom: 0.625rem;
   }
+  .info-final div h4 {
+    font-size: 8px;
+  }
   .info-final div img {
     height: 30px;
     width: auto;
-  }
-  .info-final div h4 {
-    font-size: 8px;
   }
   /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
   /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/

@@ -15,66 +15,42 @@
         width: 350px;
         text-align: center;
     }
-    .proyect1-aboutme div {
-        width: 100%;
+    .proyect1-aboutme {
+        div{
+            button{
+                width: 50%;
+            }
+        }
     }
-    .proyect2-aboutme div {
-        width: 100%;
+    .proyect2-aboutme {
+        div {
+            width: 100%;
+            button{
+                width: 50%;
+            }
+        }
     }
-    .proyect1-aboutme div button{
-        width: 50%;
-    }
-    .proyect2-aboutme div button{
-        width: 50%;
-    }
-    .proyect1-aboutme div p{
+    .proyect1-aboutme {
+        div {
+            width: 100%;
+            p{
         width: 350px;
         font-weight: 500;
     }
-    .proyect2-aboutme div p{
+}
+    }
+    .proyect2-aboutme {
+        div {
+            p{
         width: 350px;
         text-align: center;}
-    footer{
-        background-color: rgb(214, 214, 214);
-        height:34.375rem;
-        gap: 3.125rem ;
     }
-    .primer-footer{
-        gap:20px;
-        flex-direction:column ;
-    }
-    .social-media li a img{
-        height: 17px;
-    }
-    .newsletter{
-        width: 18.75rem;
-        gap:1.25rem;
-    }
-    .newsletter p{
-        font-size: 10px;
-    }
-    .info-final div{
-        gap: 1.25rem;
-        margin-bottom: .625rem ;
-    }
-    .info-final div img{
-        height: 30px;
-        width: auto;
-    }
-    .info-final div h4{
-        font-size: 8px;
-    }
+}
+
     
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .primer-footer-catalogue{
-        gap:40px;
-        flex-direction:column ;
-    }
-    .footer-contact{
-        height: 600px;
-    }
     .cards-catalogue .portrait-image{
         height: 15rem;
         width: 15rem;
@@ -91,15 +67,7 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------index----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/    
-    .index-body-background{
-        background-color: $background-color;
-        background-image: url(../assets/img/media-4.jpg);
-        width:auto;
-        height: 100vh;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
+
     .welcome {
         width: 21.875rem;
         font-family: 'Anonymous Pro', monospace;
@@ -108,20 +76,6 @@
         text-align: center;
         display:flex; 
         justify-content: center;
-    }
-    .section-landing div{
-        width:12.5rem;
-        font-family: 'Anonymous Pro', monospace;
-        color:white; 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: end;
-        gap:1rem;
-    }
-    .section-landing img{
-        height: 14.375rem;
-        width: auto;
     }
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------books----------------------------------------------------------------------------*/
@@ -134,13 +88,16 @@
     .fonts-books{
         font-size: 2.625rem;
     }
-    .display-images img{
+    .display-images {
+        img{
     height: 150px;
     width: auto;
     }
-    .display-images-last img{
+}
+    .display-images-last {
+        img{
         height: 150px;
         width: auto;
         }
-
+    }
     }

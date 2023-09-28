@@ -5,39 +5,31 @@
     .display-images-last{
         margin-bottom: 2.5rem;
     }
-    .display-images img{
+    .display-images {
+        img{
         height: 150px;
         width: auto;
         }
-    .display-images-last img{
+    }
+    .display-images-last {
+        img{
             height: 150px;
             width: auto;
             }
+        }
     .display-images{
     gap: 30px;
                 }
     .display-images-last{
         gap: 30px;
                     }
-
-
-                    .cards-catalogue .nature-image{
-                        height: 18rem;
-                        width: 18rem;
-                    }
-                    .cards-catalogue .texture-image{
-                        height: 18rem;
-                        width: 18rem;
-                    }
-                    .cards-catalogue .portrait-image{
-                        height: 18rem;
-                        width: 18rem;
-                    }
-                    .proyect2-aboutme div{
-                        padding-bottom: 1.875rem;
-                        background-color: white;
-                        gap: 2rem;
-                        width: 600px;
+    .proyect2-aboutme {
+        div{
+        padding-bottom: 1.875rem;
+        background-color: white;
+        gap: 2rem;
+        width: 600px;
                         }
     }
+}
 

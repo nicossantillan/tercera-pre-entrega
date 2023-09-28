@@ -3,10 +3,6 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------ABOUT ME----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .titular-aboutme img{
-        height: 200px;
-        width: auto;
-    }
     .titular-enorme-aboutme{
         font-size: 1.625rem;
         height:40vh;
@@ -16,46 +12,56 @@
         width: 100%;
         text-align: center;
     }
-        .proyect1-aboutme img{
+    .proyect1-aboutme {
+            img{
         height: 17.5rem;
         }
-    .proyect2-aboutme img{
+        div{
+            p{
+                width: 100%;
+                font-weight: 500;
+                font-size: 12px;
+            }
+        }
+    }
+    .proyect2-aboutme {
+        img{
         height: 17.5rem;
-    }
-    .proyect1-aboutme div p{
-        width: 100%;
-        font-weight: 500;
-        font-size: 12px;
-    }
-    .proyect2-aboutme div p{
-        width: 100%;
-        text-align: center;
-        font-size: 12px;
+        }
+        div{
+            p{
+                width: 100%;
+                text-align: center;
+                font-size: 12px;
+            }
+        }
     }
     .info-text-aboutme{
         height:50vh;
         width: 100%;
         justify-content:center ;
+        h3{
+            font-size: 20px;
+        }
+        div{
+            width:90%;
+            h2{
+                font-size: 20px;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
     }
-    .info-text-aboutme h3{
-        font-size: 20px;
-    }
-    .info-text-aboutme div h2{
-        font-size: 20px;
-    }
-    .info-text-aboutme div p{
-        font-size: 14px;
-    }
-    .info-text-aboutme div{
-        width:90%;
-    }
-    
-    .personal-info div h4{
-        font-size: 12px;
-    }
-    
-    .personal-info div p{
-        font-size: 12px;
+    .personal-info{
+        div{
+            h4{
+                font-size: 12px;
+            }
+            p{
+                font-size: 12px;
+            }
+        }
     }
     
     footer{
@@ -65,35 +71,41 @@
         width: 100%;
     }
     
-    .primer-footer{
+    .first-footer{
         gap:20px;
     }
     
-    .social-media li a img{
-        height: 17px;
+    .social-media{
+        li{
+            a{
+                img{
+                height: 17px;
+                }
+            } 
+        } 
     }
-    
     .newsletter{
         width: 18.75rem;
         gap:1.25rem;
+        p{
+            font-size: 10px;
+        }
     }
     
-    .newsletter p{
-        font-size: 10px;
-    }
     
-    .info-final div{
+    .info-final {
+        div{
         gap: 1.25rem;
         margin-bottom: .625rem ;
+        h4{
+            font-size: 8px;
+        }
+        img{
+            height: 30px;
+            width: auto;
+        }
     }
-    
-    .info-final div img{
-        height: 30px;
-        width: auto;
-    }
-    .info-final div h4{
-        font-size: 8px;
-    }
+}
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------CATALOGUE----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/

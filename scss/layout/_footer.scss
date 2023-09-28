@@ -6,7 +6,7 @@ footer{
     flex-wrap: wrap;
     gap: 12.5rem;
     @include flex (column, wrap, space-around, center, 5rem);
-    .primer-footer{
+    .first-footer{
         padding-top: 4.375rem;
         @include flex (row, wrap, space-beetwen, center, 0rem);
         .newsletter{

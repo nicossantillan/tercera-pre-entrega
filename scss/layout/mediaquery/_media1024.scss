@@ -89,7 +89,8 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     /*-------------------------------------------------------INDEX----------------------------------------------------------------------------*/
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
-    .tecer-pagina-figma{
+
+    .third-page{
         background-color: $background-color-white;
         display:flex;
         flex-direction: column;
@@ -99,14 +100,11 @@
         padding-bottom: 30px;
         height: 100vh;
         padding-top: 40px;
-    }
-    .tecer-pagina-figma section{
-        height: 100vh;
-        @include flex (column-reverse, wrap, center, center, 1.5rem);
-    }
-    .tecer-pagina-figma{
         section{
             margin-top: 0;
+            height: 100vh;
+            @include flex (column-reverse, wrap, center, center, 1.5rem);
+    
             div{
                 display: flex;
                 flex-direction: column;
@@ -115,26 +113,27 @@
                 height: 16.375rem;
                 font-family: $font-familiy;
                 gap:15px;
+                ul{
+                    list-style: none;
+                    width: 100%;
+                    gap:10px;
+                    li{
+                        img{
+                            height: 5.5rem;
+                            width: 7.625rem;
+                            border: .0625rem solid rgba(0, 0, 0, 0.432);
+                    
+                        }
+                    }
+                }
                 button{
                     display: none;
                 }
             }
         }
     }
-    .tercer-pagina-figma section div ul{
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-        gap:10px;
-    }
     
-    .tecer-pagina-figma div ul li img{
-        height: 5.5rem;
-        width: 7.625rem;
-        border: .0625rem solid rgba(0, 0, 0, 0.432);
-    }
+
     .section-gallery{
         display: flex;
         flex-direction: row;
@@ -150,9 +149,13 @@
         flex-direction: column;
         gap: 4.375rem;
     }
-    .tecer-pagina-figma section .div-jordan{
-        height: 20.25rem;
-        width:15rem ;
+    .third-page {
+        section {
+            .div-jordan{
+                height: 20.25rem;
+                width:15rem ;
+            }
+        }
     }
     
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
@@ -160,5 +163,8 @@
     /*------------------------------------------------------------------------------------------------------------------------------------------------------*/
     .line{
         display:none;
+    }
+    .footer-catalogue{
+        height: 40rem;
     }
     }
